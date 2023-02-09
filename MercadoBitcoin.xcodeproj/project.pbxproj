@@ -26,6 +26,10 @@
 		147ED5032994B6450021332D /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5022994B6450021332D /* Extension+UITableView.swift */; };
 		147ED5052994BA560021332D /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5042994BA560021332D /* Extension+UIViewController.swift */; };
 		147ED5072994CB7A0021332D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5062994CB7A0021332D /* DetailViewController.swift */; };
+		147ED50A2995395A0021332D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5092995395A0021332D /* DetailsView.swift */; };
+		147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
+		147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50D2995422B0021332D /* ErrorHandler.swift */; };
+		147ED511299547960021332D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +73,10 @@
 		147ED5022994B6450021332D /* Extension+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
 		147ED5042994BA560021332D /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		147ED5062994CB7A0021332D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		147ED5092995395A0021332D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		147ED50B29953FF30021332D /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
+		147ED50D2995422B0021332D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
+		147ED510299547960021332D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				147ED4FA2994AE9E0021332D /* BitcoinListViewModel.swift */,
+				147ED50B29953FF30021332D /* AlertViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -180,6 +189,8 @@
 			isa = PBXGroup;
 			children = (
 				147ED4FF2994B5E40021332D /* BitcoinList */,
+				147ED508299539250021332D /* Detail */,
+				147ED50F2995477B0021332D /* Error */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -208,6 +219,7 @@
 				147ED4FD2994B19F0021332D /* Extension+UIView.swift */,
 				147ED5022994B6450021332D /* Extension+UITableView.swift */,
 				147ED5042994BA560021332D /* Extension+UIViewController.swift */,
+				147ED50D2995422B0021332D /* ErrorHandler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -219,6 +231,22 @@
 				147ED5002994B60A0021332D /* BitcoinListTableViewCell.swift */,
 			);
 			path = BitcoinList;
+			sourceTree = "<group>";
+		};
+		147ED508299539250021332D /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				147ED5092995395A0021332D /* DetailsView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		147ED50F2995477B0021332D /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				147ED510299547960021332D /* ErrorView.swift */,
+			);
+			name = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -354,14 +382,18 @@
 				147ED4F7299496AD0021332D /* Endpoint.swift in Sources */,
 				147ED4F1299495DB0021332D /* Exchanges.swift in Sources */,
 				147ED4FE2994B19F0021332D /* Extension+UIView.swift in Sources */,
+				147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */,
 				147ED4BF299494280021332D /* MainViewController.swift in Sources */,
 				147ED4BB299494280021332D /* AppDelegate.swift in Sources */,
+				147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */,
+				147ED511299547960021332D /* ErrorView.swift in Sources */,
 				147ED5012994B60A0021332D /* BitcoinListTableViewCell.swift in Sources */,
 				147ED4FB2994AE9E0021332D /* BitcoinListViewModel.swift in Sources */,
 				147ED5032994B6450021332D /* Extension+UITableView.swift in Sources */,
 				147ED5052994BA560021332D /* Extension+UIViewController.swift in Sources */,
 				147ED4F6299496AD0021332D /* NetworkError.swift in Sources */,
 				147ED4BD299494280021332D /* SceneDelegate.swift in Sources */,
+				147ED50A2995395A0021332D /* DetailsView.swift in Sources */,
 				147ED4F5299496AD0021332D /* NetworkProvider.swift in Sources */,
 				147ED4F92994A9AA0021332D /* BitcoinListView.swift in Sources */,
 				147ED5072994CB7A0021332D /* DetailViewController.swift in Sources */,

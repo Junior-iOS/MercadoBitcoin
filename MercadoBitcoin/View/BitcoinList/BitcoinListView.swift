@@ -10,11 +10,12 @@ import UIKit
 
 protocol BitcoinListViewViewDelegate: AnyObject {
     func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectEpisode coin: Bitcoin)
+    func errorWasFound(_ error: NetworkError)
 }
 
 final class BitcoinListView: UIView {
     
-    private let viewModel = BitcoinListViewModel()
+    public let viewModel = BitcoinListViewModel()
     public weak var delegate: BitcoinListViewViewDelegate?
     
     private let spinner: UIActivityIndicatorView = {
@@ -70,6 +71,11 @@ final class BitcoinListView: UIView {
 }
 
 extension BitcoinListView: BitcoinListViewModelDelegate {
+    func didNotLoadList(_ error: NetworkError) {
+        self.spinner.stopAnimating()
+        delegate?.errorWasFound(error)
+    }
+    
     func didSelectCoin(_ coin: Bitcoin) {
         delegate?.setBitcoinListView(with: self, didSelectEpisode: coin)
     }

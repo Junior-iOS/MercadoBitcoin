@@ -23,7 +23,7 @@ final class NetworkProvider: NetworkProviderProtocol {
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("C1990D35-EB06-4C4E-AF49-E54D00A5BD02", forHTTPHeaderField: "X-CoinAPI-Key")
+        request.setValue("A74DA35E-A924-4C88-BE40-737CBD632F1F", forHTTPHeaderField: "X-CoinAPI-Key")
         
         loadUrlAndDecode(request, completion: completion)
     }

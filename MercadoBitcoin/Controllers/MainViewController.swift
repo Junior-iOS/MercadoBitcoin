@@ -10,6 +10,7 @@ import UIKit
 final class MainViewController: UIViewController {
     
     private let bitcoinListView = BitcoinListView()
+    private let errorView = ErrorView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +41,42 @@ final class MainViewController: UIViewController {
             bitcoinListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
+    
+    private func setupErrorView() {
+        view.addSubview(errorView)
+        errorView.translatesAutoresizingMaskIntoConstraints = false
+        errorView.delegate = self
+        
+        NSLayoutConstraint.activate([
+            errorView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+            errorView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
+            errorView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
+            errorView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
+        ])
+    }
 }
 
 extension MainViewController: BitcoinListViewViewDelegate {
+    func errorWasFound(_ error: NetworkError) {
+        DispatchQueue.main.async {
+            ErrorHandler.shared.showAlertFor(error: error, from: self)
+            self.setupErrorView()
+        }
+    }
+    
     func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectEpisode coin: Bitcoin) {
         let vc = DetailViewController()
         vc.coin = coin
         vc.navigationItem.largeTitleDisplayMode = .never
         navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+extension MainViewController: ErrorViewDelegate {
+    func didTapTryAgain() {
+        DispatchQueue.main.async {
+            self.errorView.removeFromSuperview()
+            self.bitcoinListView.viewModel.fetchBitcoinList()
+        }
     }
 }

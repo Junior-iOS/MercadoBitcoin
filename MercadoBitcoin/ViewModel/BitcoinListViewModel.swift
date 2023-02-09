@@ -11,6 +11,7 @@ import UIKit
 protocol BitcoinListViewModelDelegate: AnyObject {
     func didSelectCoin(_ coin: Bitcoin)
     func didLoadList()
+    func didNotLoadList(_ error: NetworkError)
 }
 
 final class BitcoinListViewModel: NSObject {
@@ -30,7 +31,7 @@ final class BitcoinListViewModel: NSObject {
                     self.delegate?.didLoadList()
                 }
             case .failure(let failure):
-                print(failure)
+                self.delegate?.didNotLoadList(failure)
             }
         }
     }
