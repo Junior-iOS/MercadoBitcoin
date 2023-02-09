@@ -16,8 +16,6 @@ final class MainViewController: UIViewController {
         super.viewDidLoad()
         setup()
         setupConstraints()
-        
-        print("Teste")
     }
     
     private func setup() {
