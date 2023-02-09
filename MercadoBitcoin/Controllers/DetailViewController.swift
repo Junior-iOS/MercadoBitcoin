@@ -37,5 +37,4 @@ final class DetailViewController: UIViewController {
             detailsView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
-
 }

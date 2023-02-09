@@ -29,7 +29,7 @@ final class NetworkProvider: NetworkProviderProtocol {
     }
     
     private func loadUrlAndDecode<T: Decodable>(_ url: URLRequest, completion: @escaping (Result<T, NetworkError>) -> Void) {
-        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+        URLSession.shared.dataTask(with: url) { [weak self] data, _, error in
             guard let self = self else { return }
             
             guard error == nil, let data = data else {
