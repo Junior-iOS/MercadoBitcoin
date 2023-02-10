@@ -64,7 +64,7 @@ extension MainViewController: BitcoinListViewViewDelegate {
         }
     }
     
-    func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectEpisode coin: Bitcoin) {
+    func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectCoin coin: Bitcoin) {
         let vc = DetailViewController()
         vc.coin = coin
         vc.navigationItem.largeTitleDisplayMode = .never

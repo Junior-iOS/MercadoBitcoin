@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol BitcoinListViewViewDelegate: AnyObject {
-    func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectEpisode coin: Bitcoin)
+    func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectCoin coin: Bitcoin)
     func errorWasFound(_ error: NetworkError)
 }
 
@@ -77,7 +77,7 @@ extension BitcoinListView: BitcoinListViewModelDelegate {
     }
     
     func didSelectCoin(_ coin: Bitcoin) {
-        delegate?.setBitcoinListView(with: self, didSelectEpisode: coin)
+        delegate?.setBitcoinListView(with: self, didSelectCoin: coin)
     }
     
     func didLoadList() {
