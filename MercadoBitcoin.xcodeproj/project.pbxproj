@@ -30,9 +30,6 @@
 		147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
 		147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50D2995422B0021332D /* ErrorHandler.swift */; };
 		147ED511299547960021332D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
-		147ED51329956C100021332D /* MercadoBitcoinScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED51229956C100021332D /* MercadoBitcoinScreen.swift */; };
-		147ED51529956C490021332D /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED51429956C490021332D /* ScreenIdentifier.swift */; };
-		147ED51629956F0C0021332D /* ScreenIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED51429956C490021332D /* ScreenIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,8 +77,6 @@
 		147ED50B29953FF30021332D /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		147ED50D2995422B0021332D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		147ED510299547960021332D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
-		147ED51229956C100021332D /* MercadoBitcoinScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinScreen.swift; sourceTree = "<group>"; };
-		147ED51429956C490021332D /* ScreenIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenIdentifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				147ED4DB2994942A0021332D /* MercadoBitcoinUITests.swift */,
-				147ED51229956C100021332D /* MercadoBitcoinScreen.swift */,
 				147ED4DD2994942A0021332D /* MercadoBitcoinUITestsLaunchTests.swift */,
 			);
 			path = MercadoBitcoinUITests;
@@ -205,7 +199,6 @@
 			isa = PBXGroup;
 			children = (
 				147ED4F0299495DB0021332D /* Exchanges.swift */,
-				147ED51429956C490021332D /* ScreenIdentifier.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -392,7 +385,6 @@
 				147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */,
 				147ED4BF299494280021332D /* MainViewController.swift in Sources */,
 				147ED4BB299494280021332D /* AppDelegate.swift in Sources */,
-				147ED51529956C490021332D /* ScreenIdentifier.swift in Sources */,
 				147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */,
 				147ED511299547960021332D /* ErrorView.swift in Sources */,
 				147ED5012994B60A0021332D /* BitcoinListTableViewCell.swift in Sources */,
@@ -420,8 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				147ED51629956F0C0021332D /* ScreenIdentifier.swift in Sources */,
-				147ED51329956C100021332D /* MercadoBitcoinScreen.swift in Sources */,
 				147ED4DC2994942A0021332D /* MercadoBitcoinUITests.swift in Sources */,
 				147ED4DE2994942A0021332D /* MercadoBitcoinUITestsLaunchTests.swift in Sources */,
 			);
