@@ -23,7 +23,7 @@ final class NetworkProvider: NetworkProviderProtocol {
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("A74DA35E-A924-4C88-BE40-737CBD632F1F", forHTTPHeaderField: "X-CoinAPI-Key")
+        request.setValue(Bundle.main.apiKey, forHTTPHeaderField: "X-CoinAPI-Key")
         
         loadUrlAndDecode(request, completion: completion)
     }
