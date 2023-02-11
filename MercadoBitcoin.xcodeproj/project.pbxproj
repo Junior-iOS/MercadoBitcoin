@@ -55,6 +55,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1449475129972B51004BA665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147ED4AF299494270021332D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1423EE7229970F8900D4B59E;
+			remoteInfo = MercadoBitcoinMock;
+		};
 		147ED4CE2994942A0021332D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 147ED4AF299494270021332D /* Project object */;
@@ -359,6 +366,7 @@
 			);
 			dependencies = (
 				147ED4D92994942A0021332D /* PBXTargetDependency */,
+				1449475229972B51004BA665 /* PBXTargetDependency */,
 			);
 			name = MercadoBitcoinUITests;
 			productName = MercadoBitcoinUITests;
@@ -384,7 +392,7 @@
 					};
 					147ED4D62994942A0021332D = {
 						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 147ED4B6299494280021332D;
+						TestTargetID = 1423EE7229970F8900D4B59E;
 					};
 				};
 			};
@@ -517,6 +525,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		1449475229972B51004BA665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1423EE7229970F8900D4B59E /* MercadoBitcoinMock */;
+			targetProxy = 1449475129972B51004BA665 /* PBXContainerItemProxy */;
+		};
 		147ED4CF2994942A0021332D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 147ED4B6299494280021332D /* MercadoBitcoin */;
@@ -821,7 +834,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MercadoBitcoin;
+				TEST_TARGET_NAME = MercadoBitcoinMock;
 			};
 			name = Debug;
 		};
@@ -839,7 +852,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = MercadoBitcoin;
+				TEST_TARGET_NAME = MercadoBitcoinMock;
 			};
 			name = Release;
 		};
