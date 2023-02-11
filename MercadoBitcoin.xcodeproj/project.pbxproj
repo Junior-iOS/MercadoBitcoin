@@ -175,6 +175,7 @@
 				147ED4EC299495650021332D /* ViewModel */,
 				147ED4EB2994955D0021332D /* Controllers */,
 				147ED4FC2994B18E0021332D /* Helpers */,
+				1423EE9029970FDC00D4B59E /* NetworkProviderMock */,
 				147ED4C82994942A0021332D /* Info.plist */,
 			);
 			path = MercadoBitcoin;
@@ -247,7 +248,6 @@
 		147ED4EF299495910021332D /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				1423EE9029970FDC00D4B59E /* NetworkProviderMock */,
 				147ED4F4299496AC0021332D /* Endpoint.swift */,
 				147ED4F3299496AC0021332D /* NetworkError.swift */,
 				1423EE9129970FF300D4B59E /* NetworkProvider.swift */,
@@ -258,10 +258,10 @@
 		147ED4FC2994B18E0021332D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				147ED50D2995422B0021332D /* ErrorHandler.swift */,
 				147ED4FD2994B19F0021332D /* Extension+UIView.swift */,
 				147ED5022994B6450021332D /* Extension+UITableView.swift */,
 				147ED5042994BA560021332D /* Extension+UIViewController.swift */,
-				147ED50D2995422B0021332D /* ErrorHandler.swift */,
 				1423EE5429970AF800D4B59E /* Extension+Bundle.swift */,
 			);
 			path = Helpers;

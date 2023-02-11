@@ -31,8 +31,6 @@ final class BitcoinListView: UIView {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(cellClass: BitcoinListTableViewCell.self)
-        tableView.isHidden = true
-        tableView.alpha = 0
         return tableView
     }()
     
@@ -81,14 +79,7 @@ extension BitcoinListView: BitcoinListViewModelDelegate {
     }
     
     func didLoadList() {
-        tableView.isHidden = false
         tableView.reloadData()
-
-        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
-            UIView.animate(withDuration: 0.4) {
-                self.spinner.stopAnimating()
-                self.tableView.alpha = 1
-            }
-        })
+        spinner.stopAnimating()
     }
 }
