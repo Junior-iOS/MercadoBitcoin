@@ -12,13 +12,13 @@ struct Endpoint {
     
     var url: URL? {
         var urlComponents = URLComponents()
-        urlComponents.scheme = "https"
-        urlComponents.host = "rest.coinapi.io"
+        urlComponents.scheme = Bundle.main.scheme
+        urlComponents.host = Bundle.main.host
         urlComponents.path = path
         return urlComponents.url
     }
     
     static func searchList() -> Endpoint {
-        Endpoint(path: "/v1/exchanges")
+        Endpoint(path: Bundle.main.endpoint)
     }
 }
