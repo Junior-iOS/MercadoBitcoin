@@ -62,6 +62,13 @@
 			remoteGlobalIDString = 1423EE7229970F8900D4B59E;
 			remoteInfo = MercadoBitcoinMock;
 		};
+		14494753299732D0004BA665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 147ED4AF299494270021332D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1423EE7229970F8900D4B59E;
+			remoteInfo = MercadoBitcoinMock;
+		};
 		147ED4CE2994942A0021332D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 147ED4AF299494270021332D /* Project object */;
@@ -348,6 +355,7 @@
 			);
 			dependencies = (
 				147ED4CF2994942A0021332D /* PBXTargetDependency */,
+				14494754299732D0004BA665 /* PBXTargetDependency */,
 			);
 			name = MercadoBitcoinTests;
 			productName = MercadoBitcoinTests;
@@ -529,6 +537,11 @@
 			isa = PBXTargetDependency;
 			target = 1423EE7229970F8900D4B59E /* MercadoBitcoinMock */;
 			targetProxy = 1449475129972B51004BA665 /* PBXContainerItemProxy */;
+		};
+		14494754299732D0004BA665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1423EE7229970F8900D4B59E /* MercadoBitcoinMock */;
+			targetProxy = 14494753299732D0004BA665 /* PBXContainerItemProxy */;
 		};
 		147ED4CF2994942A0021332D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

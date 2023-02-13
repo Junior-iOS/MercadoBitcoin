@@ -16,11 +16,16 @@ protocol BitcoinListViewModelDelegate: AnyObject {
 
 final class BitcoinListViewModel: NSObject {
     
+    private let service:NetworkProviderProtocol
     public weak var delegate: BitcoinListViewModelDelegate?
     public var list: [Bitcoin]?
     
+    init(service: NetworkProviderProtocol = NetworkProvider.shared) {
+        self.service = service
+    }
+    
     public func fetchBitcoinList() {
-        NetworkProvider.shared.fetchData(.searchList()) { [weak self] result in
+        service.fetchData(.searchList()) { [weak self] result in
             guard let self = self else { return }
             
             switch result {
