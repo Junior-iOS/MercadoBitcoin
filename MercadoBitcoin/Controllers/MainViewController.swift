@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 08/02/23.
+//  Created by NJ Development on 17/05/23.
 //
 
 import UIKit
@@ -18,10 +18,15 @@ final class MainViewController: UIViewController {
         setupConstraints()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.navigationBar.tintColor = .systemBackground
+    }
+    
     private func setup() {
         view.backgroundColor = .systemBackground
         
-        title = "Mercado Bitcoin"
+        title = Bundle.main.title
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         

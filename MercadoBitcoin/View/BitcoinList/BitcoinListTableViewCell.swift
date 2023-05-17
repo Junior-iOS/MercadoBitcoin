@@ -2,7 +2,7 @@
 //  BitcoinListTableViewCell.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 09/02/23.
+//  Created by NJ Development on 17/05/23.
 //
 
 import UIKit
@@ -13,10 +13,27 @@ final class BitcoinListTableViewCell: UITableViewCell {
     let nameLabel = UILabel()
     let volumeLabel = UILabel()
     
+    private lazy var cellBackgroundView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.96, alpha: 1.00)
+        view.layer.cornerRadius = 10
+        view.clipsToBounds = true
+        return view
+    }()
+    
     private lazy var vStack: UIStackView = {
-        let stack = UIStackView(arrangedSubviews: [exchangeIdLabel, nameLabel, volumeLabel])
+        let stack = UIStackView(arrangedSubviews: [exchangeIdLabel, nameLabel])
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .vertical
+        stack.distribution = .fillEqually
+        return stack
+    }()
+    
+    private lazy var hStack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [vStack, volumeLabel])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
         stack.distribution = .fillEqually
         return stack
     }()
@@ -38,13 +55,20 @@ final class BitcoinListTableViewCell: UITableViewCell {
     }
     
     private func setupCell() {
-        contentView.addSubview(vStack)
+        contentView.backgroundColor = UIColor(red: 1.00, green: 0.58, blue: 0.08, alpha: 1.00)
+        contentView.addSubview(cellBackgroundView)
+        cellBackgroundView.addSubview(hStack)
         
         NSLayoutConstraint.activate([
-            vStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            vStack.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            vStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 10),
-            vStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10)
+            cellBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
+            cellBackgroundView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
+            cellBackgroundView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
+            cellBackgroundView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
+            
+            hStack.topAnchor.constraint(equalTo: cellBackgroundView.topAnchor, constant: 10),
+            hStack.leadingAnchor.constraint(equalTo: cellBackgroundView.leadingAnchor, constant: 10),
+            hStack.trailingAnchor.constraint(equalTo: cellBackgroundView.trailingAnchor, constant: -10),
+            hStack.bottomAnchor.constraint(equalTo: cellBackgroundView.bottomAnchor, constant: -10)
         ])
         
         exchangeIdLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -62,9 +86,11 @@ final class BitcoinListTableViewCell: UITableViewCell {
 
         nameLabel.font = .systemFont(ofSize: 14, weight: .regular)
         nameLabel.textColor = UIColor.darkGray
+        nameLabel.numberOfLines = 0
 
-        volumeLabel.font = .systemFont(ofSize: 15, weight: .regular)
-        volumeLabel.textColor = UIColor.darkGray
+        volumeLabel.font = .systemFont(ofSize: 15, weight: .semibold)
+        volumeLabel.textAlignment = .right
+        volumeLabel.numberOfLines = 0
     }
     
     func configure(list: Bitcoin?) {
@@ -73,6 +99,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
             self.exchangeIdLabel.text = list.exchangeId
             self.nameLabel.text = list.name
             self.volumeLabel.text = "USD \(String(describing: volume))"
+            self.volumeLabel.textColor = volume == 0.0 ? .systemBlue : UIColor(red: 0.00, green: 0.40, blue: 0.00, alpha: 1.00)
         }
     }
 }

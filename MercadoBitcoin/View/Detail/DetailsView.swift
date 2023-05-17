@@ -2,12 +2,21 @@
 //  DetailsView.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 09/02/23.
+//  Created by NJ Development on 17/05/23.
 //
 
 import UIKit
 
 final class DetailsView: UIView {
+    
+    private lazy var contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.96, alpha: 1.00)
+        view.layer.cornerRadius = 10
+        view.clipsToBounds = true
+        return view
+    }()
     
     private let imageView: UIImageView = {
         let imageView = UIImageView()
@@ -20,16 +29,22 @@ final class DetailsView: UIView {
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 50, weight: .bold)
+        label.textColor = .white
+        label.numberOfLines = 0
         return label
     }()
     
     private let volumeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 40, weight: .bold)
+        label.numberOfLines = 0
         return label
     }()
     
     var coin: Bitcoin?
+    let screenSize = UIScreen.main.bounds
 
     init(coin: Bitcoin?) {
         super.init(frame: .zero)
@@ -42,32 +57,42 @@ final class DetailsView: UIView {
     }
     
     private func setup() {
+        backgroundColor = UIColor(red: 0.12, green: 0.13, blue: 0.14, alpha: 1.00)
+        
         DispatchQueue.main.async {
             guard let coin = self.coin, let volume = coin.volume else { return }
             
             self.nameLabel.text = coin.name
             self.volumeLabel.text = "USD \(String(describing: volume))"
+            self.volumeLabel.textColor = volume == 0.0 ? .systemBlue : UIColor(red: 0.00, green: 0.40, blue: 0.00, alpha: 1.00)
         }
         
         setupConstraints()
     }
     
     private func setupConstraints() {
-        addSubviews(imageView, nameLabel, volumeLabel)
+        addSubviews(nameLabel, contentView, imageView)
+        contentView.addSubviews(volumeLabel)
         
         NSLayoutConstraint.activate([
-            imageView.topAnchor.constraint(equalTo: topAnchor, constant: 50),
-            imageView.centerXAnchor.constraint(equalTo: centerXAnchor),
+            nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
+            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            
+            contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            contentView.heightAnchor.constraint(equalToConstant: screenSize.height / 2),
+            
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 10),
+            imageView.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: 80),
             imageView.heightAnchor.constraint(equalToConstant: 200),
             imageView.widthAnchor.constraint(equalToConstant: 200),
-            
-            nameLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 20),
-            nameLabel.centerXAnchor.constraint(equalTo: imageView.centerXAnchor),
-            nameLabel.heightAnchor.constraint(equalToConstant: 50),
-            
-            volumeLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 20),
-            volumeLabel.centerXAnchor.constraint(equalTo: nameLabel.centerXAnchor),
-            volumeLabel.heightAnchor.constraint(equalToConstant: 50)
+
+            volumeLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
+            volumeLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor),
+            volumeLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            volumeLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
         ])
     }
 }

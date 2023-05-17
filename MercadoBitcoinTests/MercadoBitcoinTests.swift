@@ -2,7 +2,7 @@
 //  MercadoBitcoinTests.swift
 //  MercadoBitcoinTests
 //
-//  Created by Junior Silva on 08/02/23.
+//  Created by NJ Development on 16/05/23.
 //
 
 import XCTest

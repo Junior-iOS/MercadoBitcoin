@@ -2,7 +2,7 @@
 //  Extension+Bundle.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 10/02/23.
+//  Created by NJ Development on 18/05/23.
 //
 
 import Foundation
@@ -22,5 +22,9 @@ extension Bundle {
     
     var endpoint: String {
         return self.object(forInfoDictionaryKey: "ENDPOINT") as! String
+    }
+    
+    var title: String {
+        return self.object(forInfoDictionaryKey: "TITLE") as! String
     }
 }

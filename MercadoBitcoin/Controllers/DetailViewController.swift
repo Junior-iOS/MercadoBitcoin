@@ -2,7 +2,7 @@
 //  DetailViewController.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 09/02/23.
+//  Created by NJ Development on 17/05/23.
 //
 
 import UIKit
@@ -24,6 +24,11 @@ final class DetailViewController: UIViewController {
         title = coin?.exchangeId
         
         setupConstraints()
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        view.setGradientColor()
     }
     
     private func setupConstraints() {

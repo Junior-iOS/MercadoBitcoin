@@ -8,6 +8,8 @@
 	<string>${HOST}</string>
 	<key>SCHEME</key>
 	<string>${SCHEME}</string>
+    <key>TITLE</key>
+    <string>${TITLE}</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

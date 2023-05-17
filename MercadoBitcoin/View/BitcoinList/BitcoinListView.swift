@@ -2,7 +2,7 @@
 //  BitcoinListView.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 09/02/23.
+//  Created by NJ Development on 17/05/23.
 //
 
 import Foundation
@@ -31,6 +31,7 @@ final class BitcoinListView: UIView {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(cellClass: BitcoinListTableViewCell.self)
+        tableView.separatorStyle = .none
         return tableView
     }()
     
