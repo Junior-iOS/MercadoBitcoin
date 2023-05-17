@@ -83,6 +83,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
     private func setupLabels() {
         exchangeIdLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         exchangeIdLabel.numberOfLines = 0
+        exchangeIdLabel.textColor = .black
 
         nameLabel.font = .systemFont(ofSize: 14, weight: .regular)
         nameLabel.textColor = UIColor.darkGray
