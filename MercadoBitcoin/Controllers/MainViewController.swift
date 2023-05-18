@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MainViewController: UIViewController {
+final class MainViewController: BaseViewController {
     
     private let bitcoinListView = BitcoinListView()
     private let errorView = ErrorView()
@@ -20,7 +20,7 @@ final class MainViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
-        navigationController?.navigationBar.tintColor = .systemBackground
+        navigationController?.navigationBar.tintColor = .systemOrange
     }
     
     private func setup() {

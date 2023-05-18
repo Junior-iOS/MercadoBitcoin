@@ -28,6 +28,7 @@
 		1423EE8629970F8900D4B59E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5062994CB7A0021332D /* DetailViewController.swift */; };
 		1423EE8929970F8900D4B59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147ED4C52994942A0021332D /* LaunchScreen.storyboard */; };
 		1423EE8A29970F8900D4B59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147ED4C32994942A0021332D /* Assets.xcassets */; };
+		14460B6B2A15A7BA00C4DA54 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */; };
 		1449474F29971230004BA665 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4F2299496AC0021332D /* NetworkProvider.swift */; };
 		144947502997125B004BA665 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423EE9129970FF300D4B59E /* NetworkProvider.swift */; };
 		147ED4BB299494280021332D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4BA299494280021332D /* AppDelegate.swift */; };
@@ -89,6 +90,7 @@
 		1423EE5429970AF800D4B59E /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
 		1423EE8E29970F8900D4B59E /* MercadoBitcoinMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoinMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1423EE9129970FF300D4B59E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		147ED4B7299494280021332D /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147ED4BA299494280021332D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		147ED4BC299494280021332D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 		147ED4EB2994955D0021332D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */,
 				147ED4BE299494280021332D /* MainViewController.swift */,
 				147ED5062994CB7A0021332D /* DetailViewController.swift */,
 			);
@@ -496,6 +499,7 @@
 				1423EE5529970AF800D4B59E /* Extension+Bundle.swift in Sources */,
 				147ED4FE2994B19F0021332D /* Extension+UIView.swift in Sources */,
 				147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */,
+				14460B6B2A15A7BA00C4DA54 /* BaseViewController.swift in Sources */,
 				147ED4BF299494280021332D /* MainViewController.swift in Sources */,
 				147ED4BB299494280021332D /* AppDelegate.swift in Sources */,
 				147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */,
@@ -570,7 +574,7 @@
 		1423EE8C29970F8900D4B59E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_KEY = "A74DA35E-A924-4C88-BE40-737CBD632F1F";
+				API_KEY = "ABFB41F3-AE27-400A-853F-B7E36C79FB50";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -595,13 +599,14 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TITLE = "Mercado Bitcoin";
 			};
 			name = Debug;
 		};
 		1423EE8D29970F8900D4B59E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_KEY = "A74DA35E-A924-4C88-BE40-737CBD632F1F";
+				API_KEY = "ABFB41F3-AE27-400A-853F-B7E36C79FB50";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -626,6 +631,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TITLE = "Mercado Bitcoin";
 			};
 			name = Release;
 		};
@@ -746,7 +752,7 @@
 		147ED4E22994942A0021332D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_KEY = "A74DA35E-A924-4C88-BE40-737CBD632F1F";
+				API_KEY = "ABFB41F3-AE27-400A-853F-B7E36C79FB50";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -778,7 +784,7 @@
 		147ED4E32994942A0021332D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				API_KEY = "A74DA35E-A924-4C88-BE40-737CBD632F1F";
+				API_KEY = "ABFB41F3-AE27-400A-853F-B7E36C79FB50";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;

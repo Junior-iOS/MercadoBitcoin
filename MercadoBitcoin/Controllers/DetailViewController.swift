@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class DetailViewController: UIViewController {
+final class DetailViewController: BaseViewController {
     
     var coin: Bitcoin?
     private lazy var detailsView = DetailsView(coin: coin)
@@ -24,11 +24,6 @@ final class DetailViewController: UIViewController {
         title = coin?.exchangeId
         
         setupConstraints()
-    }
-    
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        view.setGradientColor()
     }
     
     private func setupConstraints() {
