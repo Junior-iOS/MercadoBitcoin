@@ -28,7 +28,7 @@ internal extension UIView {
         gradientLayer.frame = self.bounds
         self.layer.insertSublayer(gradientLayer, at: 0)
     }
-    
+
     func cleanDollars(_ value: String?) -> String {
         guard value != nil else { return "$0.00" }
         let doubleValue = Double(value!) ?? 0.0

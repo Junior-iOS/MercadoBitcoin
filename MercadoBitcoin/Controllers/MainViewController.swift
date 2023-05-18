@@ -10,7 +10,7 @@ import UIKit
 final class MainViewController: BaseViewController {
     private let bitcoinListView = BitcoinListView()
     private let errorView = ErrorView()
-    
+
     override func loadView() {
         super.loadView()
         self.view = bitcoinListView
@@ -35,7 +35,7 @@ final class MainViewController: BaseViewController {
 
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
-        
+
         bitcoinListView.delegate = self
     }
 

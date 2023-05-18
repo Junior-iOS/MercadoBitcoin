@@ -98,7 +98,9 @@ extension BitcoinListView: BitcoinListViewModelDelegate {
     }
 
     func didLoadList() {
-        tableView.reloadData()
-        spinner.stopAnimating()
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+            self.spinner.stopAnimating()
+        }
     }
 }

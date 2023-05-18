@@ -12,7 +12,6 @@ protocol NetworkProviderProtocol: AnyObject {
 }
 
 final class NetworkProvider: NetworkProviderProtocol {
-    
     func execute<T: Codable>(_ endpoint: Endpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.invalidEndpoint))

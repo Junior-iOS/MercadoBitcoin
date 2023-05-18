@@ -16,7 +16,11 @@ protocol BitcoinListViewModelDelegate: AnyObject {
 final class BitcoinListViewModel: NSObject {
     private let service: NetworkProviderProtocol
     weak var delegate: BitcoinListViewModelDelegate?
-    var list: [Bitcoin]?
+    var list: [Bitcoin]? {
+        didSet {
+            self.delegate?.didLoadList()
+        }
+    }
 
     init(service: NetworkProviderProtocol = NetworkProvider()) {
         self.service = service
@@ -25,14 +29,10 @@ final class BitcoinListViewModel: NSObject {
     func fetchBitcoinList() {
         service.execute(.searchList(), expecting: [Bitcoin].self) { [weak self] result in
             guard let self else { return }
-            
+
             switch result {
             case .success(let model):
                 list = model
-
-                DispatchQueue.main.async {
-                    self.delegate?.didLoadList()
-                }
 
             case .failure(let failure):
                 delegate?.didNotLoadList(failure)

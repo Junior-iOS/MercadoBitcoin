@@ -36,7 +36,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
         stack.distribution = .fillEqually
         return stack
     }()
-    
+
     private let kMargins: CGFloat = 10
     private let kLabelHeight: CGFloat = 20
 
@@ -100,7 +100,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
 
     func configure(list: Bitcoin?) {
         guard let list, let volume = list.volume else { return }
-        
+
         DispatchQueue.main.async {
             self.exchangeIdLabel.text = list.exchangeId
             self.nameLabel.text = list.name
