@@ -19,217 +19,175 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		03FF346D212F472D3D598CDC5D9FCEAD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		07319FC388250B963206DB0BF5262128 /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D82CAADD7B66921242AC0AF2395026 /* CGPath.swift */; };
-		15E03F103CDE96E10CD68520B7D411FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		1D0EF6FBAF37BB930183B8F5AA719CD2 /* SnapshotTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DB8CA37816DD90F7BF81E55B29B76D1 /* SnapshotTesting-dummy.m */; };
-		28F1B4D31269CC69CB5F41DBBCEF5222 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EE4578AACE6BC89626B66603B69DFEC /* Any.swift */; };
-		2C0C1A356E0D75368E196C24C3761129 /* Diffing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DADB45F4D95320EFC4B3BDCBD7EC74 /* Diffing.swift */; };
-		32C868480CED3BD89BB635D9D124E6CA /* SnapshotKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 159741CBB7BA940F4392FD3DC55D6988 /* SnapshotKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D1E0E44DB5DB31C932BBB9F1385B57A /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70883A784018EC1FB85B1C049C052A5 /* NSView.swift */; };
-		3DAFC3A87D54F6BA47518F4904B7FE54 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1DF61D89FCE30DF974ACE3031162C0 /* AssertSnapshot.swift */; };
-		4249BA5FD30CFB0680582D7C7C6EE392 /* AssertInlineSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92790E879DF9A7B92452EC2E94215261 /* AssertInlineSnapshot.swift */; };
-		444A870AF8B0C6F9FFB5E13C88CBC4C9 /* UICollectionView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEFE4E02CE37FB3DCC82C9A0F2ADA4 /* UICollectionView+Snapshot.swift */; };
-		44EB59BB9A4950859116E453CA354C5D /* SnapshotKitProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9CCB93AA3646414C1F43E8BDA930FC /* SnapshotKitProtocol.swift */; };
-		480D1264071DA1967F86F28F5CF29B8B /* SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38859D434F92208998053ED5742369A /* SpriteKit.swift */; };
+		07319FC388250B963206DB0BF5262128 /* CGPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA4C0F3B78D6D65ECCE492F1D0BEC0F /* CGPath.swift */; };
+		18FA86B0E8B41C33893B263E27761BFA /* Pods-MercadoBitcoinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455ED7880BD79630DB7BB6DE2178D1A3 /* Pods-MercadoBitcoinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D0EF6FBAF37BB930183B8F5AA719CD2 /* SnapshotTesting-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 332D7CE754808934322510E43A069A3F /* SnapshotTesting-dummy.m */; };
+		28F1B4D31269CC69CB5F41DBBCEF5222 /* Any.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6F888443EA6819DF16D0FD5647DC939 /* Any.swift */; };
+		2C0C1A356E0D75368E196C24C3761129 /* Diffing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5114BDB12545CFDAE5F8587D635A7319 /* Diffing.swift */; };
+		3D1E0E44DB5DB31C932BBB9F1385B57A /* NSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F06B9EA11F71221450DC558D789054 /* NSView.swift */; };
+		3DAFC3A87D54F6BA47518F4904B7FE54 /* AssertSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF40DC027090EED3E57A488120C2822F /* AssertSnapshot.swift */; };
+		4249BA5FD30CFB0680582D7C7C6EE392 /* AssertInlineSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BAEE60902410D1EFDFCC9E6437FD58 /* AssertInlineSnapshot.swift */; };
+		480D1264071DA1967F86F28F5CF29B8B /* SpriteKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E294A387D3FEB21463115656D09FA91 /* SpriteKit.swift */; };
 		4855ADD9D48506CF49B35D38C69D7E59 /* Pods-MercadoBitcoinMock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98CD2E807747A3425857E1179E35BF2E /* Pods-MercadoBitcoinMock-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		486A6DAD276EB55E6D7C9F515C86C227 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020BD59B8F2A65295889E04F20378C6A /* SnapshotTestCase.swift */; };
-		49EA12546D1247BCC41E1EF7FFEDCC24 /* UIScrollView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D0F186F210325BD1E97A3278EEF3AFB /* UIScrollView+Snapshot.swift */; };
+		486A6DAD276EB55E6D7C9F515C86C227 /* SnapshotTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D7DC6B79DE9F545B59B6C661092344 /* SnapshotTestCase.swift */; };
 		4A8EE45D20D442748189087F6A430A75 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */; };
-		4F4D449821AB24276FA18CB343B2C3E8 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224918ED7161254743CE326CAE218F1B /* Codable.swift */; };
-		4FE45D35EEFD635AF6362442A514BCA3 /* SnapshotKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5491DED418D2601A24553B584CA46294 /* SnapshotKit-dummy.m */; };
-		532436EEB8C806728018E24162505A32 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96316700984228A52DB0577938A266A1 /* Description.swift */; };
-		5CA71008BD23B355944AC5383821C4E2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561A8BCEEE9AF5A58D3A70E8C8ADA865 /* Internal.swift */; };
-		6235B3883B6D9B3EF262ACFF43631F3D /* SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A3408086C11B46344DCC59D2536AA13 /* SceneKit.swift */; };
-		6D1C733F2CE1BB4915272E12BE269BBD /* WebViewPrintPageRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602784974F69FD0E47BD522560DBA9BF /* WebViewPrintPageRenderer.swift */; };
-		6FA42D338F2CDE1914908E7D0662AED5 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF3F90374CD2BFBD25A7441A4D275A8D /* Diff.swift */; };
-		70060B0C311FBDF840146EEE9B762220 /* PlistEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6623B0164C44717B48473CD868B8C422 /* PlistEncoder.swift */; };
+		4F4D449821AB24276FA18CB343B2C3E8 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E117EE4CE2E0F0FF4656FCB48A7D4F /* Codable.swift */; };
+		532436EEB8C806728018E24162505A32 /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860967711B908A8DBB80FB0A0104873A /* Description.swift */; };
+		5CA71008BD23B355944AC5383821C4E2 /* Internal.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCE0AB17A48717299DC25BC33700A6A7 /* Internal.swift */; };
+		6235B3883B6D9B3EF262ACFF43631F3D /* SceneKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92AD86327E990BA97770DA37DAF51282 /* SceneKit.swift */; };
+		628192FB7EF4EFF4B11C8F6BAE511AB5 /* Pods-MercadoBitcoinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BB8A6641DD8739148694E9D21F3C8 /* Pods-MercadoBitcoinTests-dummy.m */; };
+		6FA42D338F2CDE1914908E7D0662AED5 /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6552F7DC2F1EBDFAA6C822450EA5FBF3 /* Diff.swift */; };
+		70060B0C311FBDF840146EEE9B762220 /* PlistEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0242F81C8C9FD6218138E25C0482029 /* PlistEncoder.swift */; };
 		7405FC1BFFB300403FD4AB9DCC49F5D6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		78BBB110735B5BD1BDDC3CD4FC563323 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D549DB0BB19A9B46D9763B44997114A /* Data.swift */; };
-		7F5C5DD662B656505ECF172E1DDC232E /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F79FDB9D1E5F02B4501520D7D3100C /* UIBezierPath.swift */; };
+		78BBB110735B5BD1BDDC3CD4FC563323 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E16180B117044EF66DDA80B55BFD29D /* Data.swift */; };
+		7F5C5DD662B656505ECF172E1DDC232E /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2A2EF5A34A1E153BF911068EA7BC4E /* UIBezierPath.swift */; };
 		80ADD61CB0720C150F42DE37CF4489A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		88DE0AA2E9071FD322F40132B5ACE852 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B3365EB6523CCE527C6F6004807542 /* String.swift */; };
-		8EC10D4A5E31432E32665E64F4013054 /* Pods-MercadoBitcoinTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE1BB8A6641DD8739148694E9D21F3C8 /* Pods-MercadoBitcoinTests-dummy.m */; };
-		9104476A4778BB28C819AB92599A5B6E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33DCA1BE655E3A53137761A3579082AF /* UIImage.swift */; };
-		928DBECCA86A6F98E4B42FA62C5FF051 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA75E6C4BEA5DC8E9681887257C6C303 /* View.swift */; };
+		88DE0AA2E9071FD322F40132B5ACE852 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30009BD9E79825CBD3BC051778C2A918 /* String.swift */; };
+		9104476A4778BB28C819AB92599A5B6E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C98FCDA5794A64FAEABCD3EC3A4D4D5 /* UIImage.swift */; };
+		928DBECCA86A6F98E4B42FA62C5FF051 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5CC54061BD56A877575F1047DBA59F /* View.swift */; };
 		93198D55E664E149A3B0A6C9F714CB63 /* Pods-MercadoBitcoin-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 44056C644752F2BADAB3287CD9F4A38C /* Pods-MercadoBitcoin-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		957508AA897C27F86D544CCF1CED1904 /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF98FD7D671BCC6C586B0B008AC93A4 /* NSBezierPath.swift */; };
-		96E71750BD8C847E125FAB3C7A336224 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CE895B11D798A6A0B08EAA4829087F /* URLRequest.swift */; };
-		97BEDF828D70F8BE2BE4E917DD992C48 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A87F9CA4B337AE295E92E3044B0629 /* NSImage.swift */; };
-		9B00AEBE5F221FE9815159125313C0BD /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E45AA17A123AB542DB5AF19775E722 /* Wait.swift */; };
-		9D65BFC4B2C4B6102D6B7EC25A7CD739 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C45C2721A4DB4C4FC034543F314CEE5 /* NSViewController.swift */; };
-		9D6622CDE2793B13735F47C44A7743ED /* SnapshotTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1F20C290A9A77BC620F81A9D2FC064 /* SnapshotTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F6B241BE1332F18DFCC2BF32E03C42C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B057B970972D8C77F7BEDBBD514D1E /* UIView.swift */; };
+		957508AA897C27F86D544CCF1CED1904 /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DA8C6BC6A1150BD0B59C00434D3B60 /* NSBezierPath.swift */; };
+		96E71750BD8C847E125FAB3C7A336224 /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3B99E11BFD486617517F0498857D4F /* URLRequest.swift */; };
+		97BEDF828D70F8BE2BE4E917DD992C48 /* NSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0F64F6268D850B4A7F4E7367438ABD /* NSImage.swift */; };
+		9B00AEBE5F221FE9815159125313C0BD /* Wait.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6463A8B85B0EE8CCB7C2B5A633C1D83 /* Wait.swift */; };
+		9D65BFC4B2C4B6102D6B7EC25A7CD739 /* NSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2B0B90EEB851C9853D025235475DBC /* NSViewController.swift */; };
+		9D6622CDE2793B13735F47C44A7743ED /* SnapshotTesting-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB299AE8810DB48007343FC4E4F670CA /* SnapshotTesting-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9F6B241BE1332F18DFCC2BF32E03C42C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A1B6C3724F4153A3BE38D5D883EA9A /* UIView.swift */; };
 		A258ACC17850C9DD8FA79298A7C4936A /* Pods-MercadoBitcoin-MercadoBitcoinUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 669A140E28BCBBBEA4A13BD1C90C2DCE /* Pods-MercadoBitcoin-MercadoBitcoinUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5E0D023122E2EB8DF52F05BC5AA70AE /* Pods-MercadoBitcoinMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BCD93D6679961D7BAA5A5F36D02560A5 /* Pods-MercadoBitcoinMock-dummy.m */; };
-		A86E0E4161B1B69BDC46BEB644A8E2BE /* UIWindow+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC8244E0F4828866C9A64937A2966F50 /* UIWindow+Snapshot.swift */; };
 		AFE414B3E0D49B39A358DE524B0839D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		B18BE6844BF84F35025D0E2772A481DC /* Pods-MercadoBitcoinTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 455ED7880BD79630DB7BB6DE2178D1A3 /* Pods-MercadoBitcoinTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C56B3E1A07308BCC8376D15C735B1C25 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAE90EF586F8C2A19669A639D93D92E /* CALayer.swift */; };
+		C56B3E1A07308BCC8376D15C735B1C25 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A94EF8929D5899C5F3FCC7C0A69F589 /* CALayer.swift */; };
+		C67B5C18B3A01E690498A440476B052D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		C9329D65BBC05F812137ED20B732CF47 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D7C28A81165EF4F88E58B8C657C3B7 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-dummy.m */; };
-		CDD80EAEB8B8D475C8E000FD7F01014B /* WKWebView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D13EE64D6A6C0EDF617B5F4C8934631 /* WKWebView+Snapshot.swift */; };
-		CFFD67104AE4ABBFEB3801F9B8149664 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19172BFBEE51CF085A032247912657CF /* Async.swift */; };
-		D0A29718080A06AB351F6FA41B725BEA /* XCTAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1594CE75A1EFD11F8B045F23B83217F5 /* XCTAttachment.swift */; };
-		D3C4D4F28C0180E812B6BA5FC4F5015B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2A347A16BDDE96782F3EE9408243D3 /* UIViewController.swift */; };
-		D7AE9DBB6C5D2522EB24A673921F9365 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BBFFC148F50EA6D1B6EFC4D165BB8EE /* SwiftUIView.swift */; };
-		DA787DFD55A7814418DE78F66BA70847 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41713F4FDA8A10A11FA827677989556D /* CaseIterable.swift */; };
+		CFFD67104AE4ABBFEB3801F9B8149664 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977D7F4183F0CA86C690A2D76FD2AF5 /* Async.swift */; };
+		D0A29718080A06AB351F6FA41B725BEA /* XCTAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20339EDBE065F889BC60A7821F51D32 /* XCTAttachment.swift */; };
+		D3C4D4F28C0180E812B6BA5FC4F5015B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030D99B09BD61070F97DDB31A2F8185E /* UIViewController.swift */; };
+		D7AE9DBB6C5D2522EB24A673921F9365 /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54D298F0C184442719A5C961D5119DA /* SwiftUIView.swift */; };
+		DA787DFD55A7814418DE78F66BA70847 /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9FFD421FC1404B9583F8F55D6F0FA /* CaseIterable.swift */; };
 		EACF2BBBA86A0DA75483EBB3952EE03A /* Pods-MercadoBitcoin-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 96542856C1A8D4CBFD1A3A93DE58653E /* Pods-MercadoBitcoin-dummy.m */; };
-		EB5F8B0D9E74FD8A1724B04E6AACFABE /* Snapshotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C145ED6009522D9C81F3C0901FFC1D1 /* Snapshotting.swift */; };
-		EF373803D1B7D29DEFEE2B6C7AC839D5 /* UITableView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6038BAD12108E13C37163DAE2FDBF7C0 /* UITableView+Snapshot.swift */; };
+		EB5F8B0D9E74FD8A1724B04E6AACFABE /* Snapshotting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861968E49A22281E2883AFF3B3B4C85A /* Snapshotting.swift */; };
 		EFF7AC5F7AA477E4885A9E6D73799443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		F2F8093AEF9770530FC8E79C9C14F70D /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAAAF3A08F2DC5EF5B12055A246CAFA /* UIView+Snapshot.swift */; };
-		FEB8176EE5F7E44C5399D94BC6DE0C46 /* String+SpecialCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B944333C71CBE648EDBCB203B9250F97 /* String+SpecialCharacters.swift */; };
+		FEB8176EE5F7E44C5399D94BC6DE0C46 /* String+SpecialCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0F211EC69C81A3D50C21B255202190 /* String+SpecialCharacters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3D3A4D1ED5DAAE321D9350FE2AE5955B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADEAE7CDD604DE4F3072E6021A314487;
-			remoteInfo = SnapshotTesting;
-		};
-		59AE555CF44ADA509482657357F11497 /* PBXContainerItemProxy */ = {
+		31A876B8D31C12289168A07C0FA9C2C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
 			remoteInfo = SwiftLint;
 		};
-		74D2D7CCCCEAF913AFEB7D11DC6A937C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
-			remoteInfo = SwiftLint;
-		};
-		AB60236DE6BB072C024DEF86C148843D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 679C923DE4115E1FC7305F5C47DF18D5;
-			remoteInfo = SnapshotKit;
-		};
-		D47B37EA71D0FC63BF10BFAD779DC19B /* PBXContainerItemProxy */ = {
+		9A0D56E10C9A3CC070B3EE54AC0C8654 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E77E1E1E07B361307F9702C102D7499E;
 			remoteInfo = "Pods-MercadoBitcoin";
 		};
+		B911370F9BB5D0855BE86C336EB2B291 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		CE84B475064BFCFF32CB9BF20BEE741F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADEAE7CDD604DE4F3072E6021A314487;
+			remoteInfo = SnapshotTesting;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		020BD59B8F2A65295889E04F20378C6A /* SnapshotTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestCase.swift; path = Sources/SnapshotTesting/SnapshotTestCase.swift; sourceTree = "<group>"; };
+		030D99B09BD61070F97DDB31A2F8185E /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
+		04E117EE4CE2E0F0FF4656FCB48A7D4F /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = Sources/SnapshotTesting/Snapshotting/Codable.swift; sourceTree = "<group>"; };
 		061176FABE8B9D9865D990559EDD2044 /* Pods-MercadoBitcoin-MercadoBitcoinUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MercadoBitcoin-MercadoBitcoinUITests"; path = Pods_MercadoBitcoin_MercadoBitcoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D7DC6B79DE9F545B59B6C661092344 /* SnapshotTestCase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotTestCase.swift; path = Sources/SnapshotTesting/SnapshotTestCase.swift; sourceTree = "<group>"; };
 		0B250CA3BDC9E56623FE4631657C3BC8 /* Pods-MercadoBitcoin-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoin-Info.plist"; sourceTree = "<group>"; };
-		0C145ED6009522D9C81F3C0901FFC1D1 /* Snapshotting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshotting.swift; path = Sources/SnapshotTesting/Snapshotting.swift; sourceTree = "<group>"; };
-		116DAE152DE0119D41105232E84B5615 /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
-		1594CE75A1EFD11F8B045F23B83217F5 /* XCTAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTAttachment.swift; path = Sources/SnapshotTesting/Common/XCTAttachment.swift; sourceTree = "<group>"; };
-		159741CBB7BA940F4392FD3DC55D6988 /* SnapshotKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotKit-umbrella.h"; sourceTree = "<group>"; };
-		19172BFBEE51CF085A032247912657CF /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
+		0C03058EB2D48BE976C6B59003921E96 /* SnapshotTesting-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotTesting-Info.plist"; sourceTree = "<group>"; };
+		0C09F335C6E0B4227C177C8A08041E4C /* SnapshotTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.release.xcconfig; sourceTree = "<group>"; };
+		17F06B9EA11F71221450DC558D789054 /* NSView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSView.swift; path = Sources/SnapshotTesting/Snapshotting/NSView.swift; sourceTree = "<group>"; };
+		181C8A0EA818A307527C9A5B7A3F8B51 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
 		1B4903E207CB77A4D25B495EECDF8643 /* Pods-MercadoBitcoinMock.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoinMock.debug.xcconfig"; sourceTree = "<group>"; };
-		1C60DEF177F7FD0FE40605175F85F141 /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		1FFBDCA93F2F5EB4EDD985C0A75C701F /* Pods-MercadoBitcoin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoin.release.xcconfig"; sourceTree = "<group>"; };
-		20DADB45F4D95320EFC4B3BDCBD7EC74 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
 		21A44B6A649C58C960D42BA0468D8A7D /* Pods-MercadoBitcoin-MercadoBitcoinUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests.modulemap"; sourceTree = "<group>"; };
-		224918ED7161254743CE326CAE218F1B /* Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Codable.swift; path = Sources/SnapshotTesting/Snapshotting/Codable.swift; sourceTree = "<group>"; };
-		23B057B970972D8C77F7BEDBBD514D1E /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
+		2A94EF8929D5899C5F3FCC7C0A69F589 /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = Sources/SnapshotTesting/Snapshotting/CALayer.swift; sourceTree = "<group>"; };
 		2B2240AE1D657812A21F8128E5756A31 /* Pods-MercadoBitcoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoinTests.debug.xcconfig"; sourceTree = "<group>"; };
-		2BBFFC148F50EA6D1B6EFC4D165BB8EE /* SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = Sources/SnapshotTesting/Snapshotting/SwiftUIView.swift; sourceTree = "<group>"; };
-		2C17A32069E5E724E7CF6352FCE16991 /* SnapshotTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.debug.xcconfig; sourceTree = "<group>"; };
-		2C45C2721A4DB4C4FC034543F314CEE5 /* NSViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSViewController.swift; path = Sources/SnapshotTesting/Snapshotting/NSViewController.swift; sourceTree = "<group>"; };
-		2CF95BEB4DE21F40B83207CEB84C496E /* SnapshotTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotTesting.modulemap; sourceTree = "<group>"; };
-		33DCA1BE655E3A53137761A3579082AF /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/SnapshotTesting/Snapshotting/UIImage.swift; sourceTree = "<group>"; };
-		3D13EE64D6A6C0EDF617B5F4C8934631 /* WKWebView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "WKWebView+Snapshot.swift"; path = "SnapshotKit/Classes/WKWebView+Snapshot.swift"; sourceTree = "<group>"; };
-		3D549DB0BB19A9B46D9763B44997114A /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/SnapshotTesting/Snapshotting/Data.swift; sourceTree = "<group>"; };
-		3E9CCB93AA3646414C1F43E8BDA930FC /* SnapshotKitProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SnapshotKitProtocol.swift; path = SnapshotKit/Classes/SnapshotKitProtocol.swift; sourceTree = "<group>"; };
-		41713F4FDA8A10A11FA827677989556D /* CaseIterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = Sources/SnapshotTesting/Snapshotting/CaseIterable.swift; sourceTree = "<group>"; };
+		2D2B0B90EEB851C9853D025235475DBC /* NSViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSViewController.swift; path = Sources/SnapshotTesting/Snapshotting/NSViewController.swift; sourceTree = "<group>"; };
+		2E294A387D3FEB21463115656D09FA91 /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
+		30009BD9E79825CBD3BC051778C2A918 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
+		332D7CE754808934322510E43A069A3F /* SnapshotTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotTesting-dummy.m"; sourceTree = "<group>"; };
 		44056C644752F2BADAB3287CD9F4A38C /* Pods-MercadoBitcoin-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercadoBitcoin-umbrella.h"; sourceTree = "<group>"; };
 		455ED7880BD79630DB7BB6DE2178D1A3 /* Pods-MercadoBitcoinTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercadoBitcoinTests-umbrella.h"; sourceTree = "<group>"; };
-		4E6E76CE205D08ED7312DC5F901684A4 /* SnapshotKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapshotKit-Info.plist"; sourceTree = "<group>"; };
+		4A0F211EC69C81A3D50C21B255202190 /* String+SpecialCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SpecialCharacters.swift"; path = "Sources/SnapshotTesting/Common/String+SpecialCharacters.swift"; sourceTree = "<group>"; };
+		4B5CC54061BD56A877575F1047DBA59F /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
+		4CC9FFD421FC1404B9583F8F55D6F0FA /* CaseIterable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CaseIterable.swift; path = Sources/SnapshotTesting/Snapshotting/CaseIterable.swift; sourceTree = "<group>"; };
+		4D0F64F6268D850B4A7F4E7367438ABD /* NSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImage.swift; path = Sources/SnapshotTesting/Snapshotting/NSImage.swift; sourceTree = "<group>"; };
+		4D3B99E11BFD486617517F0498857D4F /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
+		5114BDB12545CFDAE5F8587D635A7319 /* Diffing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diffing.swift; path = Sources/SnapshotTesting/Diffing.swift; sourceTree = "<group>"; };
+		51ADD7CE4053DF782297FD464CE95B6F /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
 		52228FFFF0C01594BF797C980DD6B87E /* Pods-MercadoBitcoinMock */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MercadoBitcoinMock"; path = Pods_MercadoBitcoinMock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5491DED418D2601A24553B584CA46294 /* SnapshotKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotKit-dummy.m"; sourceTree = "<group>"; };
 		5593DCD2E9278E829C086E3BA82BF67A /* Pods-MercadoBitcoinMock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercadoBitcoinMock.modulemap"; sourceTree = "<group>"; };
-		561A8BCEEE9AF5A58D3A70E8C8ADA865 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SnapshotTesting/Common/Internal.swift; sourceTree = "<group>"; };
-		5B85FC4F53811AA4764CB636A6275D24 /* SnapshotTesting-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-prefix.pch"; sourceTree = "<group>"; };
-		5D0F186F210325BD1E97A3278EEF3AFB /* UIScrollView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIScrollView+Snapshot.swift"; path = "SnapshotKit/Classes/UIScrollView+Snapshot.swift"; sourceTree = "<group>"; };
 		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		602784974F69FD0E47BD522560DBA9BF /* WebViewPrintPageRenderer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebViewPrintPageRenderer.swift; path = SnapshotKit/Classes/WebViewPrintPageRenderer.swift; sourceTree = "<group>"; };
-		6038BAD12108E13C37163DAE2FDBF7C0 /* UITableView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Snapshot.swift"; path = "SnapshotKit/Classes/UITableView+Snapshot.swift"; sourceTree = "<group>"; };
 		611B648C7507F02A0951E062BC123BF1 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		6623B0164C44717B48473CD868B8C422 /* PlistEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistEncoder.swift; path = Sources/SnapshotTesting/Common/PlistEncoder.swift; sourceTree = "<group>"; };
+		6552F7DC2F1EBDFAA6C822450EA5FBF3 /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
 		669A140E28BCBBBEA4A13BD1C90C2DCE /* Pods-MercadoBitcoin-MercadoBitcoinUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests-umbrella.h"; sourceTree = "<group>"; };
-		6DB8CA37816DD90F7BF81E55B29B76D1 /* SnapshotTesting-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapshotTesting-dummy.m"; sourceTree = "<group>"; };
-		6EE4578AACE6BC89626B66603B69DFEC /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/SnapshotTesting/Snapshotting/Any.swift; sourceTree = "<group>"; };
+		69194AC0655F40FA0C9814A501C5927B /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
 		6F11D12452F3F115A7AF330378FE04AA /* Pods-MercadoBitcoinTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercadoBitcoinTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		71A1B6C3724F4153A3BE38D5D883EA9A /* UIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIView.swift; path = Sources/SnapshotTesting/Snapshotting/UIView.swift; sourceTree = "<group>"; };
 		75D9085404BD8A36F4C933506E3382AF /* Pods-MercadoBitcoinTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoinTests-Info.plist"; sourceTree = "<group>"; };
+		7977D7F4183F0CA86C690A2D76FD2AF5 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/SnapshotTesting/Async.swift; sourceTree = "<group>"; };
 		7A4E72ABAD201AE09DE7B8D3B17BB0A1 /* Pods-MercadoBitcoinMock.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoinMock.release.xcconfig"; sourceTree = "<group>"; };
 		7C52DE43F733F5E0335C2DEF46E9AEC2 /* Pods-MercadoBitcoinTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MercadoBitcoinTests-frameworks.sh"; sourceTree = "<group>"; };
 		7F5CA20D16270A2811F91E5FA84655B6 /* Pods-MercadoBitcoinMock-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoinMock-Info.plist"; sourceTree = "<group>"; };
 		82721856E7CD8E1CE48D94210FC7DD32 /* Pods-MercadoBitcoin-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoin-acknowledgements.plist"; sourceTree = "<group>"; };
 		836EDDBBF41EF275298C4DA698AEA74B /* Pods-MercadoBitcoinTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercadoBitcoinTests.modulemap"; sourceTree = "<group>"; };
-		88566A7C96CBBC941C0B9E3161DEA6C7 /* SnapshotKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotKit.modulemap; sourceTree = "<group>"; };
-		8A3408086C11B46344DCC59D2536AA13 /* SceneKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneKit.swift; path = Sources/SnapshotTesting/Snapshotting/SceneKit.swift; sourceTree = "<group>"; };
-		8E2A347A16BDDE96782F3EE9408243D3 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = Sources/SnapshotTesting/Snapshotting/UIViewController.swift; sourceTree = "<group>"; };
-		90A87F9CA4B337AE295E92E3044B0629 /* NSImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSImage.swift; path = Sources/SnapshotTesting/Snapshotting/NSImage.swift; sourceTree = "<group>"; };
-		92790E879DF9A7B92452EC2E94215261 /* AssertInlineSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertInlineSnapshot.swift; path = Sources/SnapshotTesting/AssertInlineSnapshot.swift; sourceTree = "<group>"; };
-		95F79FDB9D1E5F02B4501520D7D3100C /* UIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/UIBezierPath.swift; sourceTree = "<group>"; };
-		96316700984228A52DB0577938A266A1 /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SnapshotTesting/Snapshotting/Description.swift; sourceTree = "<group>"; };
+		860967711B908A8DBB80FB0A0104873A /* Description.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Description.swift; path = Sources/SnapshotTesting/Snapshotting/Description.swift; sourceTree = "<group>"; };
+		861968E49A22281E2883AFF3B3B4C85A /* Snapshotting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Snapshotting.swift; path = Sources/SnapshotTesting/Snapshotting.swift; sourceTree = "<group>"; };
+		8C2A2EF5A34A1E153BF911068EA7BC4E /* UIBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/UIBezierPath.swift; sourceTree = "<group>"; };
+		8C98FCDA5794A64FAEABCD3EC3A4D4D5 /* UIImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIImage.swift; path = Sources/SnapshotTesting/Snapshotting/UIImage.swift; sourceTree = "<group>"; };
+		8DA4C0F3B78D6D65ECCE492F1D0BEC0F /* CGPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPath.swift; path = Sources/SnapshotTesting/Snapshotting/CGPath.swift; sourceTree = "<group>"; };
+		8E16180B117044EF66DDA80B55BFD29D /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/SnapshotTesting/Snapshotting/Data.swift; sourceTree = "<group>"; };
+		92AD86327E990BA97770DA37DAF51282 /* SceneKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SceneKit.swift; path = Sources/SnapshotTesting/Snapshotting/SceneKit.swift; sourceTree = "<group>"; };
 		96542856C1A8D4CBFD1A3A93DE58653E /* Pods-MercadoBitcoin-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercadoBitcoin-dummy.m"; sourceTree = "<group>"; };
 		98CD2E807747A3425857E1179E35BF2E /* Pods-MercadoBitcoinMock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MercadoBitcoinMock-umbrella.h"; sourceTree = "<group>"; };
-		9A1F20C290A9A77BC620F81A9D2FC064 /* SnapshotTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-umbrella.h"; sourceTree = "<group>"; };
 		9BC1ED61E3C62FB08C4E2A6826188162 /* Pods-MercadoBitcoin-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercadoBitcoin-acknowledgements.markdown"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0242F81C8C9FD6218138E25C0482029 /* PlistEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PlistEncoder.swift; path = Sources/SnapshotTesting/Common/PlistEncoder.swift; sourceTree = "<group>"; };
 		A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotTesting; path = SnapshotTesting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4DEFE4E02CE37FB3DCC82C9A0F2ADA4 /* UICollectionView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Snapshot.swift"; path = "SnapshotKit/Classes/UICollectionView+Snapshot.swift"; sourceTree = "<group>"; };
 		AE1BB8A6641DD8739148694E9D21F3C8 /* Pods-MercadoBitcoinTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercadoBitcoinTests-dummy.m"; sourceTree = "<group>"; };
-		B2CE895B11D798A6A0B08EAA4829087F /* URLRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLRequest.swift; path = Sources/SnapshotTesting/Snapshotting/URLRequest.swift; sourceTree = "<group>"; };
-		B944333C71CBE648EDBCB203B9250F97 /* String+SpecialCharacters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+SpecialCharacters.swift"; path = "Sources/SnapshotTesting/Common/String+SpecialCharacters.swift"; sourceTree = "<group>"; };
+		B4079C8F37E09FED14F8D5664E874F9D /* SnapshotTesting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.debug.xcconfig; sourceTree = "<group>"; };
+		B54D298F0C184442719A5C961D5119DA /* SwiftUIView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftUIView.swift; path = Sources/SnapshotTesting/Snapshotting/SwiftUIView.swift; sourceTree = "<group>"; };
 		B96EF61A97014977034104D69F1B1400 /* Pods-MercadoBitcoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoin.debug.xcconfig"; sourceTree = "<group>"; };
-		BA75E6C4BEA5DC8E9681887257C6C303 /* View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = View.swift; path = Sources/SnapshotTesting/Common/View.swift; sourceTree = "<group>"; };
 		BB6B95F60EED3BC60D37A201F86AB11D /* Pods-MercadoBitcoin-MercadoBitcoinUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		BBAE90EF586F8C2A19669A639D93D92E /* CALayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CALayer.swift; path = Sources/SnapshotTesting/Snapshotting/CALayer.swift; sourceTree = "<group>"; };
-		BC8244E0F4828866C9A64937A2966F50 /* UIWindow+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIWindow+Snapshot.swift"; path = "SnapshotKit/Classes/UIWindow+Snapshot.swift"; sourceTree = "<group>"; };
 		BCD93D6679961D7BAA5A5F36D02560A5 /* Pods-MercadoBitcoinMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercadoBitcoinMock-dummy.m"; sourceTree = "<group>"; };
 		C2D1EB251179699009B2403A92017533 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests-Info.plist"; sourceTree = "<group>"; };
-		C38859D434F92208998053ED5742369A /* SpriteKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SpriteKit.swift; path = Sources/SnapshotTesting/Snapshotting/SpriteKit.swift; sourceTree = "<group>"; };
-		C4D82CAADD7B66921242AC0AF2395026 /* CGPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CGPath.swift; path = Sources/SnapshotTesting/Snapshotting/CGPath.swift; sourceTree = "<group>"; };
+		C3DA8C6BC6A1150BD0B59C00434D3B60 /* NSBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/NSBezierPath.swift; sourceTree = "<group>"; };
+		C6463A8B85B0EE8CCB7C2B5A633C1D83 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/SnapshotTesting/Extensions/Wait.swift; sourceTree = "<group>"; };
 		C7D46F95CFDCDB9DF5C2D03C5CF7E32A /* Pods-MercadoBitcoinMock-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoinMock-acknowledgements.plist"; sourceTree = "<group>"; };
 		CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CC7AA4742C4486491F934EA148716DF7 /* Pods-MercadoBitcoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoinTests.release.xcconfig"; sourceTree = "<group>"; };
 		CCC60799BE720E9B251F9F856EC21B96 /* Pods-MercadoBitcoinMock-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MercadoBitcoinMock-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CCE0AB17A48717299DC25BC33700A6A7 /* Internal.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Internal.swift; path = Sources/SnapshotTesting/Common/Internal.swift; sourceTree = "<group>"; };
 		CE53359DB4705B98569C860207C20C8C /* Pods-MercadoBitcoinTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MercadoBitcoinTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CF3F90374CD2BFBD25A7441A4D275A8D /* Diff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Diff.swift; path = Sources/SnapshotTesting/Diff.swift; sourceTree = "<group>"; };
-		D1B3365EB6523CCE527C6F6004807542 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/SnapshotTesting/Snapshotting/String.swift; sourceTree = "<group>"; };
+		CF40DC027090EED3E57A488120C2822F /* AssertSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertSnapshot.swift; path = Sources/SnapshotTesting/AssertSnapshot.swift; sourceTree = "<group>"; };
 		D1EC868B8A8E69673EB9163880F58FAF /* Pods-MercadoBitcoinTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MercadoBitcoinTests"; path = Pods_MercadoBitcoinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D20339EDBE065F889BC60A7821F51D32 /* XCTAttachment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = XCTAttachment.swift; path = Sources/SnapshotTesting/Common/XCTAttachment.swift; sourceTree = "<group>"; };
+		D20BB10C3ACC5E6E2A295A10B5542EC1 /* SnapshotTesting.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SnapshotTesting.modulemap; sourceTree = "<group>"; };
 		D4977272E0E0F73F052ABF974796D1C3 /* Pods-MercadoBitcoin-MercadoBitcoinUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		D8E45AA17A123AB542DB5AF19775E722 /* Wait.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Wait.swift; path = Sources/SnapshotTesting/Extensions/Wait.swift; sourceTree = "<group>"; };
-		D8F76BB2145FAABC0B56677A5DCCAF0D /* SnapshotKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotKit.debug.xcconfig; sourceTree = "<group>"; };
 		D9D7C28A81165EF4F88E58B8C657C3B7 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests-dummy.m"; sourceTree = "<group>"; };
-		DC0C0F8B6DF65616FEEA331B03C6D471 /* SnapshotTesting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotTesting.release.xcconfig; sourceTree = "<group>"; };
-		DE456A335A1C7A1642A6F8A50FB68956 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
-		DFAAAF3A08F2DC5EF5B12055A246CAFA /* UIView+Snapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Snapshot.swift"; path = "SnapshotKit/Classes/UIView+Snapshot.swift"; sourceTree = "<group>"; };
 		E28A8D452BDD2AA8A754E8CD4C885A05 /* Pods-MercadoBitcoin.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MercadoBitcoin.modulemap"; sourceTree = "<group>"; };
-		E3C02B3CB37652E7BC4640DA03975759 /* SnapshotKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotKit-prefix.pch"; sourceTree = "<group>"; };
-		E920D2826A8A77D96295A2DF5A8D96BF /* SnapshotKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapshotKit.release.xcconfig; sourceTree = "<group>"; };
+		E5BAEE60902410D1EFDFCC9E6437FD58 /* AssertInlineSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertInlineSnapshot.swift; path = Sources/SnapshotTesting/AssertInlineSnapshot.swift; sourceTree = "<group>"; };
+		E6F888443EA6819DF16D0FD5647DC939 /* Any.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Any.swift; path = Sources/SnapshotTesting/Snapshotting/Any.swift; sourceTree = "<group>"; };
+		EB299AE8810DB48007343FC4E4F670CA /* SnapshotTesting-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapshotTesting-umbrella.h"; sourceTree = "<group>"; };
 		EDB7D53EDBE3C9D959BC5BBD2EBCCBA8 /* Pods-MercadoBitcoin-MercadoBitcoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MercadoBitcoin-MercadoBitcoinUITests.release.xcconfig"; sourceTree = "<group>"; };
-		EDF98FD7D671BCC6C586B0B008AC93A4 /* NSBezierPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSBezierPath.swift; path = Sources/SnapshotTesting/Snapshotting/NSBezierPath.swift; sourceTree = "<group>"; };
-		F70883A784018EC1FB85B1C049C052A5 /* NSView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSView.swift; path = Sources/SnapshotTesting/Snapshotting/NSView.swift; sourceTree = "<group>"; };
-		F90922A96C1D47802A1821D3B9FC6489 /* SnapshotKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapshotKit; path = SnapshotKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9B11C1F205C06F4CB601D578C72496 /* Pods-MercadoBitcoin */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MercadoBitcoin"; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD1DF61D89FCE30DF974ACE3031162C0 /* AssertSnapshot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AssertSnapshot.swift; path = Sources/SnapshotTesting/AssertSnapshot.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3BBCCFAE4CAFBA90D904CAECD6859D76 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				15E03F103CDE96E10CD68520B7D411FC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5F2456FFA807D5B0F3A6B51B249310FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -263,30 +221,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC3A8F42EF8D3B4AD67F2500911E67A0 /* Frameworks */ = {
+		EEFD16E47602AA91DBA2D83F3362387E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03FF346D212F472D3D598CDC5D9FCEAD /* Foundation.framework in Frameworks */,
+				C67B5C18B3A01E690498A440476B052D /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0CC4AF72BB74EE5C09677A33E4B592BC /* Support Files */ = {
+		0664C3B8FDDE8EADD07E259702B85B4E /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				2CF95BEB4DE21F40B83207CEB84C496E /* SnapshotTesting.modulemap */,
-				6DB8CA37816DD90F7BF81E55B29B76D1 /* SnapshotTesting-dummy.m */,
-				116DAE152DE0119D41105232E84B5615 /* SnapshotTesting-Info.plist */,
-				5B85FC4F53811AA4764CB636A6275D24 /* SnapshotTesting-prefix.pch */,
-				9A1F20C290A9A77BC620F81A9D2FC064 /* SnapshotTesting-umbrella.h */,
-				2C17A32069E5E724E7CF6352FCE16991 /* SnapshotTesting.debug.xcconfig */,
-				DC0C0F8B6DF65616FEEA331B03C6D471 /* SnapshotTesting.release.xcconfig */,
+				225F257CA61ABD45220B34A88F97DE85 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SnapshotTesting";
+			name = SwiftLint;
+			path = SwiftLint;
 			sourceTree = "<group>";
 		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
@@ -295,6 +247,58 @@
 				974814B39C0012DECD183BBB91B32103 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		225F257CA61ABD45220B34A88F97DE85 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				181C8A0EA818A307527C9A5B7A3F8B51 /* SwiftLint.debug.xcconfig */,
+				69194AC0655F40FA0C9814A501C5927B /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		2313300B7713115C5AD2DB8A55968372 /* SnapshotTesting */ = {
+			isa = PBXGroup;
+			children = (
+				E6F888443EA6819DF16D0FD5647DC939 /* Any.swift */,
+				E5BAEE60902410D1EFDFCC9E6437FD58 /* AssertInlineSnapshot.swift */,
+				CF40DC027090EED3E57A488120C2822F /* AssertSnapshot.swift */,
+				7977D7F4183F0CA86C690A2D76FD2AF5 /* Async.swift */,
+				2A94EF8929D5899C5F3FCC7C0A69F589 /* CALayer.swift */,
+				4CC9FFD421FC1404B9583F8F55D6F0FA /* CaseIterable.swift */,
+				8DA4C0F3B78D6D65ECCE492F1D0BEC0F /* CGPath.swift */,
+				04E117EE4CE2E0F0FF4656FCB48A7D4F /* Codable.swift */,
+				8E16180B117044EF66DDA80B55BFD29D /* Data.swift */,
+				860967711B908A8DBB80FB0A0104873A /* Description.swift */,
+				6552F7DC2F1EBDFAA6C822450EA5FBF3 /* Diff.swift */,
+				5114BDB12545CFDAE5F8587D635A7319 /* Diffing.swift */,
+				CCE0AB17A48717299DC25BC33700A6A7 /* Internal.swift */,
+				C3DA8C6BC6A1150BD0B59C00434D3B60 /* NSBezierPath.swift */,
+				4D0F64F6268D850B4A7F4E7367438ABD /* NSImage.swift */,
+				17F06B9EA11F71221450DC558D789054 /* NSView.swift */,
+				2D2B0B90EEB851C9853D025235475DBC /* NSViewController.swift */,
+				A0242F81C8C9FD6218138E25C0482029 /* PlistEncoder.swift */,
+				92AD86327E990BA97770DA37DAF51282 /* SceneKit.swift */,
+				09D7DC6B79DE9F545B59B6C661092344 /* SnapshotTestCase.swift */,
+				861968E49A22281E2883AFF3B3B4C85A /* Snapshotting.swift */,
+				2E294A387D3FEB21463115656D09FA91 /* SpriteKit.swift */,
+				30009BD9E79825CBD3BC051778C2A918 /* String.swift */,
+				4A0F211EC69C81A3D50C21B255202190 /* String+SpecialCharacters.swift */,
+				B54D298F0C184442719A5C961D5119DA /* SwiftUIView.swift */,
+				8C2A2EF5A34A1E153BF911068EA7BC4E /* UIBezierPath.swift */,
+				8C98FCDA5794A64FAEABCD3EC3A4D4D5 /* UIImage.swift */,
+				71A1B6C3724F4153A3BE38D5D883EA9A /* UIView.swift */,
+				030D99B09BD61070F97DDB31A2F8185E /* UIViewController.swift */,
+				4D3B99E11BFD486617517F0498857D4F /* URLRequest.swift */,
+				4B5CC54061BD56A877575F1047DBA59F /* View.swift */,
+				C6463A8B85B0EE8CCB7C2B5A633C1D83 /* Wait.swift */,
+				D20339EDBE065F889BC60A7821F51D32 /* XCTAttachment.swift */,
+				9D642249DEDC505B8067B3CCD66CBDD4 /* Support Files */,
+			);
+			name = SnapshotTesting;
+			path = SnapshotTesting;
 			sourceTree = "<group>";
 		};
 		264A90EB0ABC0EA292C2CE881E9C820E /* Pods-MercadoBitcoin-MercadoBitcoinUITests */ = {
@@ -311,6 +315,15 @@
 			);
 			name = "Pods-MercadoBitcoin-MercadoBitcoinUITests";
 			path = "Target Support Files/Pods-MercadoBitcoin-MercadoBitcoinUITests";
+			sourceTree = "<group>";
+		};
+		309FCDB491E2BD3305B65F73FD9D09A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2313300B7713115C5AD2DB8A55968372 /* SnapshotTesting */,
+				0664C3B8FDDE8EADD07E259702B85B4E /* SwiftLint */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		32ADD5F3A4495DD3762CF44691F52662 /* Targets Support Files */ = {
@@ -373,25 +386,6 @@
 			path = "Target Support Files/Pods-MercadoBitcoin";
 			sourceTree = "<group>";
 		};
-		8C158034DC343FB9EFE9FDCA0F15AD25 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DE456A335A1C7A1642A6F8A50FB68956 /* SwiftLint.debug.xcconfig */,
-				1C60DEF177F7FD0FE40605175F85F141 /* SwiftLint.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftLint";
-			sourceTree = "<group>";
-		};
-		9713FB60212C089B471CA70E60AB587C /* SwiftLint */ = {
-			isa = PBXGroup;
-			children = (
-				8C158034DC343FB9EFE9FDCA0F15AD25 /* Support Files */,
-			);
-			name = SwiftLint;
-			path = SwiftLint;
-			sourceTree = "<group>";
-		};
 		974814B39C0012DECD183BBB91B32103 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,86 +395,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		9E67C2A2FAE815D66158EF481282F111 /* SnapshotTesting */ = {
+		9D642249DEDC505B8067B3CCD66CBDD4 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6EE4578AACE6BC89626B66603B69DFEC /* Any.swift */,
-				92790E879DF9A7B92452EC2E94215261 /* AssertInlineSnapshot.swift */,
-				FD1DF61D89FCE30DF974ACE3031162C0 /* AssertSnapshot.swift */,
-				19172BFBEE51CF085A032247912657CF /* Async.swift */,
-				BBAE90EF586F8C2A19669A639D93D92E /* CALayer.swift */,
-				41713F4FDA8A10A11FA827677989556D /* CaseIterable.swift */,
-				C4D82CAADD7B66921242AC0AF2395026 /* CGPath.swift */,
-				224918ED7161254743CE326CAE218F1B /* Codable.swift */,
-				3D549DB0BB19A9B46D9763B44997114A /* Data.swift */,
-				96316700984228A52DB0577938A266A1 /* Description.swift */,
-				CF3F90374CD2BFBD25A7441A4D275A8D /* Diff.swift */,
-				20DADB45F4D95320EFC4B3BDCBD7EC74 /* Diffing.swift */,
-				561A8BCEEE9AF5A58D3A70E8C8ADA865 /* Internal.swift */,
-				EDF98FD7D671BCC6C586B0B008AC93A4 /* NSBezierPath.swift */,
-				90A87F9CA4B337AE295E92E3044B0629 /* NSImage.swift */,
-				F70883A784018EC1FB85B1C049C052A5 /* NSView.swift */,
-				2C45C2721A4DB4C4FC034543F314CEE5 /* NSViewController.swift */,
-				6623B0164C44717B48473CD868B8C422 /* PlistEncoder.swift */,
-				8A3408086C11B46344DCC59D2536AA13 /* SceneKit.swift */,
-				020BD59B8F2A65295889E04F20378C6A /* SnapshotTestCase.swift */,
-				0C145ED6009522D9C81F3C0901FFC1D1 /* Snapshotting.swift */,
-				C38859D434F92208998053ED5742369A /* SpriteKit.swift */,
-				D1B3365EB6523CCE527C6F6004807542 /* String.swift */,
-				B944333C71CBE648EDBCB203B9250F97 /* String+SpecialCharacters.swift */,
-				2BBFFC148F50EA6D1B6EFC4D165BB8EE /* SwiftUIView.swift */,
-				95F79FDB9D1E5F02B4501520D7D3100C /* UIBezierPath.swift */,
-				33DCA1BE655E3A53137761A3579082AF /* UIImage.swift */,
-				23B057B970972D8C77F7BEDBBD514D1E /* UIView.swift */,
-				8E2A347A16BDDE96782F3EE9408243D3 /* UIViewController.swift */,
-				B2CE895B11D798A6A0B08EAA4829087F /* URLRequest.swift */,
-				BA75E6C4BEA5DC8E9681887257C6C303 /* View.swift */,
-				D8E45AA17A123AB542DB5AF19775E722 /* Wait.swift */,
-				1594CE75A1EFD11F8B045F23B83217F5 /* XCTAttachment.swift */,
-				0CC4AF72BB74EE5C09677A33E4B592BC /* Support Files */,
+				D20BB10C3ACC5E6E2A295A10B5542EC1 /* SnapshotTesting.modulemap */,
+				332D7CE754808934322510E43A069A3F /* SnapshotTesting-dummy.m */,
+				0C03058EB2D48BE976C6B59003921E96 /* SnapshotTesting-Info.plist */,
+				51ADD7CE4053DF782297FD464CE95B6F /* SnapshotTesting-prefix.pch */,
+				EB299AE8810DB48007343FC4E4F670CA /* SnapshotTesting-umbrella.h */,
+				B4079C8F37E09FED14F8D5664E874F9D /* SnapshotTesting.debug.xcconfig */,
+				0C09F335C6E0B4227C177C8A08041E4C /* SnapshotTesting.release.xcconfig */,
 			);
-			name = SnapshotTesting;
-			path = SnapshotTesting;
-			sourceTree = "<group>";
-		};
-		A3796586A49C126576C17BD9690E89E4 /* SnapshotKit */ = {
-			isa = PBXGroup;
-			children = (
-				3E9CCB93AA3646414C1F43E8BDA930FC /* SnapshotKitProtocol.swift */,
-				A4DEFE4E02CE37FB3DCC82C9A0F2ADA4 /* UICollectionView+Snapshot.swift */,
-				5D0F186F210325BD1E97A3278EEF3AFB /* UIScrollView+Snapshot.swift */,
-				6038BAD12108E13C37163DAE2FDBF7C0 /* UITableView+Snapshot.swift */,
-				DFAAAF3A08F2DC5EF5B12055A246CAFA /* UIView+Snapshot.swift */,
-				BC8244E0F4828866C9A64937A2966F50 /* UIWindow+Snapshot.swift */,
-				602784974F69FD0E47BD522560DBA9BF /* WebViewPrintPageRenderer.swift */,
-				3D13EE64D6A6C0EDF617B5F4C8934631 /* WKWebView+Snapshot.swift */,
-				E75A5687690BD245AF2F2691252E2C00 /* Support Files */,
-			);
-			name = SnapshotKit;
-			path = SnapshotKit;
-			sourceTree = "<group>";
-		};
-		BB8611785BBF08807D91F237730F3FC1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A3796586A49C126576C17BD9690E89E4 /* SnapshotKit */,
-				9E67C2A2FAE815D66158EF481282F111 /* SnapshotTesting */,
-				9713FB60212C089B471CA70E60AB587C /* SwiftLint */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		CBD9A842047C00DA72145C1EBF5E1428 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				FB9B11C1F205C06F4CB601D578C72496 /* Pods-MercadoBitcoin */,
-				061176FABE8B9D9865D990559EDD2044 /* Pods-MercadoBitcoin-MercadoBitcoinUITests */,
-				52228FFFF0C01594BF797C980DD6B87E /* Pods-MercadoBitcoinMock */,
-				D1EC868B8A8E69673EB9163880F58FAF /* Pods-MercadoBitcoinTests */,
-				F90922A96C1D47802A1821D3B9FC6489 /* SnapshotKit */,
-				A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SnapshotTesting";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -488,38 +415,27 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
-				BB8611785BBF08807D91F237730F3FC1 /* Pods */,
-				CBD9A842047C00DA72145C1EBF5E1428 /* Products */,
+				309FCDB491E2BD3305B65F73FD9D09A2 /* Pods */,
+				F2A28C0F82478CF181B617AD6DE83982 /* Products */,
 				32ADD5F3A4495DD3762CF44691F52662 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		E75A5687690BD245AF2F2691252E2C00 /* Support Files */ = {
+		F2A28C0F82478CF181B617AD6DE83982 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88566A7C96CBBC941C0B9E3161DEA6C7 /* SnapshotKit.modulemap */,
-				5491DED418D2601A24553B584CA46294 /* SnapshotKit-dummy.m */,
-				4E6E76CE205D08ED7312DC5F901684A4 /* SnapshotKit-Info.plist */,
-				E3C02B3CB37652E7BC4640DA03975759 /* SnapshotKit-prefix.pch */,
-				159741CBB7BA940F4392FD3DC55D6988 /* SnapshotKit-umbrella.h */,
-				D8F76BB2145FAABC0B56677A5DCCAF0D /* SnapshotKit.debug.xcconfig */,
-				E920D2826A8A77D96295A2DF5A8D96BF /* SnapshotKit.release.xcconfig */,
+				FB9B11C1F205C06F4CB601D578C72496 /* Pods-MercadoBitcoin */,
+				061176FABE8B9D9865D990559EDD2044 /* Pods-MercadoBitcoin-MercadoBitcoinUITests */,
+				52228FFFF0C01594BF797C980DD6B87E /* Pods-MercadoBitcoinMock */,
+				D1EC868B8A8E69673EB9163880F58FAF /* Pods-MercadoBitcoinTests */,
+				A037DBBCCACBFACB5C39A80B1C273043 /* SnapshotTesting */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/SnapshotKit";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		010F976194B781FEDEAD2838E45D88D4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32C868480CED3BD89BB635D9D124E6CA /* SnapshotKit-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		02BC8312358ABB0F27DBBD8FB4CEE774 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -544,11 +460,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		92ACB44464C94C161B1717ED648925AF /* Headers */ = {
+		79324EDDA739E434AFEAE174C2380046 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B18BE6844BF84F35025D0E2772A481DC /* Pods-MercadoBitcoinTests-umbrella.h in Headers */,
+				18FA86B0E8B41C33893B263E27761BFA /* Pods-MercadoBitcoinTests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,19 +481,18 @@
 /* Begin PBXNativeTarget section */
 		1A3B6FF961A87EB9F315CE0617F99DAD /* Pods-MercadoBitcoinTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12EB4C9B9323A778A89D9CE300896AB4 /* Build configuration list for PBXNativeTarget "Pods-MercadoBitcoinTests" */;
+			buildConfigurationList = 0E903CE5DD20394522A46FA7F90A8645 /* Build configuration list for PBXNativeTarget "Pods-MercadoBitcoinTests" */;
 			buildPhases = (
-				92ACB44464C94C161B1717ED648925AF /* Headers */,
-				930ABDF27158401174D6EB0FCCF23787 /* Sources */,
-				DC3A8F42EF8D3B4AD67F2500911E67A0 /* Frameworks */,
-				F971C8886AAF666414732C206C3863F8 /* Resources */,
+				79324EDDA739E434AFEAE174C2380046 /* Headers */,
+				EAE87BF58764689EAC0A3273E34923C8 /* Sources */,
+				EEFD16E47602AA91DBA2D83F3362387E /* Frameworks */,
+				0ACBA202C4B495D76FB6671F073DB93C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				94050B3768AC777960AD2C37B4FA651D /* PBXTargetDependency */,
-				218B3EAEFFEB0DA46EC05A606D4E309A /* PBXTargetDependency */,
-				3D45E0A0951D95BC28E85599970ACA4F /* PBXTargetDependency */,
+				7BD3D664F140B1D1B57930173B40E37E /* PBXTargetDependency */,
+				7344AA15CE258AAAEDDC4B2AA931C153 /* PBXTargetDependency */,
 			);
 			name = "Pods-MercadoBitcoinTests";
 			productName = Pods_MercadoBitcoinTests;
@@ -600,24 +515,6 @@
 			name = "Pods-MercadoBitcoinMock";
 			productName = Pods_MercadoBitcoinMock;
 			productReference = 52228FFFF0C01594BF797C980DD6B87E /* Pods-MercadoBitcoinMock */;
-			productType = "com.apple.product-type.framework";
-		};
-		679C923DE4115E1FC7305F5C47DF18D5 /* SnapshotKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 340C36DC48583D29D9239E44D85A2EFF /* Build configuration list for PBXNativeTarget "SnapshotKit" */;
-			buildPhases = (
-				010F976194B781FEDEAD2838E45D88D4 /* Headers */,
-				366CE2EBEB4888949A91C585794F33CE /* Sources */,
-				3BBCCFAE4CAFBA90D904CAECD6859D76 /* Frameworks */,
-				5A78CEC5BB8606BF4D04EAC5EE71CFC3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = SnapshotKit;
-			productName = SnapshotKit;
-			productReference = F90922A96C1D47802A1821D3B9FC6489 /* SnapshotKit */;
 			productType = "com.apple.product-type.framework";
 		};
 		ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */ = {
@@ -650,7 +547,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				0C50B23DA3A494BC74E9B75AFB4688D8 /* PBXTargetDependency */,
+				0C0BDE9960F16174D213046CE15BF78B /* PBXTargetDependency */,
 			);
 			name = "Pods-MercadoBitcoin";
 			productName = Pods_MercadoBitcoin;
@@ -669,7 +566,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				1C38F0ED824DA1D9EF8B8811D5A1FC49 /* PBXTargetDependency */,
+				168BD196D78F0D249CBA04E46049BD36 /* PBXTargetDependency */,
 			);
 			name = "Pods-MercadoBitcoin-MercadoBitcoinUITests";
 			productName = Pods_MercadoBitcoin_MercadoBitcoinUITests;
@@ -694,7 +591,7 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = CBD9A842047C00DA72145C1EBF5E1428 /* Products */;
+			productRefGroup = F2A28C0F82478CF181B617AD6DE83982 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -702,7 +599,6 @@
 				FA253D09F7B9D06FBD4082C2350278A5 /* Pods-MercadoBitcoin-MercadoBitcoinUITests */,
 				43BBC64C15A2EDB194C1F69042D68943 /* Pods-MercadoBitcoinMock */,
 				1A3B6FF961A87EB9F315CE0617F99DAD /* Pods-MercadoBitcoinTests */,
-				679C923DE4115E1FC7305F5C47DF18D5 /* SnapshotKit */,
 				ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */,
 				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
 			);
@@ -717,7 +613,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5A78CEC5BB8606BF4D04EAC5EE71CFC3 /* Resources */ = {
+		0ACBA202C4B495D76FB6671F073DB93C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -745,13 +641,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F971C8886AAF666414732C206C3863F8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -763,35 +652,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		366CE2EBEB4888949A91C585794F33CE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FE45D35EEFD635AF6362442A514BCA3 /* SnapshotKit-dummy.m in Sources */,
-				44EB59BB9A4950859116E453CA354C5D /* SnapshotKitProtocol.swift in Sources */,
-				444A870AF8B0C6F9FFB5E13C88CBC4C9 /* UICollectionView+Snapshot.swift in Sources */,
-				49EA12546D1247BCC41E1EF7FFEDCC24 /* UIScrollView+Snapshot.swift in Sources */,
-				EF373803D1B7D29DEFEE2B6C7AC839D5 /* UITableView+Snapshot.swift in Sources */,
-				F2F8093AEF9770530FC8E79C9C14F70D /* UIView+Snapshot.swift in Sources */,
-				A86E0E4161B1B69BDC46BEB644A8E2BE /* UIWindow+Snapshot.swift in Sources */,
-				6D1C733F2CE1BB4915272E12BE269BBD /* WebViewPrintPageRenderer.swift in Sources */,
-				CDD80EAEB8B8D475C8E000FD7F01014B /* WKWebView+Snapshot.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8AD15F8444FCADB62BEB75A8ABDD2ED0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				C9329D65BBC05F812137ED20B732CF47 /* Pods-MercadoBitcoin-MercadoBitcoinUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		930ABDF27158401174D6EB0FCCF23787 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8EC10D4A5E31432E32665E64F4013054 /* Pods-MercadoBitcoinTests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -844,42 +709,81 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EAE87BF58764689EAC0A3273E34923C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				628192FB7EF4EFF4B11C8F6BAE511AB5 /* Pods-MercadoBitcoinTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0C50B23DA3A494BC74E9B75AFB4688D8 /* PBXTargetDependency */ = {
+		0C0BDE9960F16174D213046CE15BF78B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 59AE555CF44ADA509482657357F11497 /* PBXContainerItemProxy */;
+			targetProxy = 31A876B8D31C12289168A07C0FA9C2C7 /* PBXContainerItemProxy */;
 		};
-		1C38F0ED824DA1D9EF8B8811D5A1FC49 /* PBXTargetDependency */ = {
+		168BD196D78F0D249CBA04E46049BD36 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftLint;
 			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
-			targetProxy = 74D2D7CCCCEAF913AFEB7D11DC6A937C /* PBXContainerItemProxy */;
+			targetProxy = B911370F9BB5D0855BE86C336EB2B291 /* PBXContainerItemProxy */;
 		};
-		218B3EAEFFEB0DA46EC05A606D4E309A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SnapshotKit;
-			target = 679C923DE4115E1FC7305F5C47DF18D5 /* SnapshotKit */;
-			targetProxy = AB60236DE6BB072C024DEF86C148843D /* PBXContainerItemProxy */;
-		};
-		3D45E0A0951D95BC28E85599970ACA4F /* PBXTargetDependency */ = {
+		7344AA15CE258AAAEDDC4B2AA931C153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SnapshotTesting;
 			target = ADEAE7CDD604DE4F3072E6021A314487 /* SnapshotTesting */;
-			targetProxy = 3D3A4D1ED5DAAE321D9350FE2AE5955B /* PBXContainerItemProxy */;
+			targetProxy = CE84B475064BFCFF32CB9BF20BEE741F /* PBXContainerItemProxy */;
 		};
-		94050B3768AC777960AD2C37B4FA651D /* PBXTargetDependency */ = {
+		7BD3D664F140B1D1B57930173B40E37E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MercadoBitcoin";
 			target = E77E1E1E07B361307F9702C102D7499E /* Pods-MercadoBitcoin */;
-			targetProxy = D47B37EA71D0FC63BF10BFAD779DC19B /* PBXContainerItemProxy */;
+			targetProxy = 9A0D56E10C9A3CC070B3EE54AC0C8654 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		21E024BC0A05D5FC7122CD541717D393 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2240AE1D657812A21F8128E5756A31 /* Pods-MercadoBitcoinTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2F17CCC389E7D4B275FAD843AC649C95 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FFBDCA93F2F5EB4EDD985C0A75C701F /* Pods-MercadoBitcoin.release.xcconfig */;
@@ -920,7 +824,7 @@
 		};
 		38054F06D12494D19A4C008BB03C6C4F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC0C0F8B6DF65616FEEA331B03C6D471 /* SnapshotTesting.release.xcconfig */;
+			baseConfigurationReference = 0C09F335C6E0B4227C177C8A08041E4C /* SnapshotTesting.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1017,43 +921,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		45E5AB4E894830F0F08AFD6C6DFCAA30 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B2240AE1D657812A21F8128E5756A31 /* Pods-MercadoBitcoinTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1194,6 +1061,44 @@
 			};
 			name = Release;
 		};
+		5FE3B6C060CBA638FD9341BA1F2F5E60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC7AA4742C4486491F934EA148716DF7 /* Pods-MercadoBitcoinTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7E1BF9086E21498B76919300E0EE0E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1B4903E207CB77A4D25B495EECDF8643 /* Pods-MercadoBitcoinMock.debug.xcconfig */;
@@ -1233,7 +1138,7 @@
 		};
 		8B2A9AB578F492EBA041FAA048620A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C17A32069E5E724E7CF6352FCE16991 /* SnapshotTesting.debug.xcconfig */;
+			baseConfigurationReference = B4079C8F37E09FED14F8D5664E874F9D /* SnapshotTesting.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1268,7 +1173,7 @@
 		};
 		AD81E62ACCB0B7A923FC8AA288F9921E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1C60DEF177F7FD0FE40605175F85F141 /* SwiftLint.release.xcconfig */;
+			baseConfigurationReference = 69194AC0655F40FA0C9814A501C5927B /* SwiftLint.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1358,116 +1263,9 @@
 			};
 			name = Debug;
 		};
-		D6CED3DDBB49E5730AF958A9693AAAE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D8F76BB2145FAABC0B56677A5DCCAF0D /* SnapshotKit.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapshotKit/SnapshotKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapshotKit/SnapshotKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SnapshotKit/SnapshotKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapshotKit;
-				PRODUCT_NAME = SnapshotKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		DB9644596E635D2F4ACBE0365FDB4DA6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E920D2826A8A77D96295A2DF5A8D96BF /* SnapshotKit.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SnapshotKit/SnapshotKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SnapshotKit/SnapshotKit-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SnapshotKit/SnapshotKit.modulemap";
-				PRODUCT_MODULE_NAME = SnapshotKit;
-				PRODUCT_NAME = SnapshotKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		E1A91E3812B381AAA4A1FE73D8AAA316 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC7AA4742C4486491F934EA148716DF7 /* Pods-MercadoBitcoinTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		EADD1F50ABC8096A0D6CB18822BB4EE4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE456A335A1C7A1642A6F8A50FB68956 /* SwiftLint.debug.xcconfig */;
+			baseConfigurationReference = 181C8A0EA818A307527C9A5B7A3F8B51 /* SwiftLint.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1484,11 +1282,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		12EB4C9B9323A778A89D9CE300896AB4 /* Build configuration list for PBXNativeTarget "Pods-MercadoBitcoinTests" */ = {
+		0E903CE5DD20394522A46FA7F90A8645 /* Build configuration list for PBXNativeTarget "Pods-MercadoBitcoinTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				45E5AB4E894830F0F08AFD6C6DFCAA30 /* Debug */,
-				E1A91E3812B381AAA4A1FE73D8AAA316 /* Release */,
+				21E024BC0A05D5FC7122CD541717D393 /* Debug */,
+				5FE3B6C060CBA638FD9341BA1F2F5E60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1498,15 +1296,6 @@
 			buildConfigurations = (
 				8B2A9AB578F492EBA041FAA048620A24 /* Debug */,
 				38054F06D12494D19A4C008BB03C6C4F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		340C36DC48583D29D9239E44D85A2EFF /* Build configuration list for PBXNativeTarget "SnapshotKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D6CED3DDBB49E5730AF958A9693AAAE3 /* Debug */,
-				DB9644596E635D2F4ACBE0365FDB4DA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

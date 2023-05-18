@@ -13,7 +13,7 @@ target 'MercadoBitcoin' do
     # Pods for testing
 
   pod 'SnapshotTesting', '~> 1.8.1'
-  pod 'SnapshotKit'
+  #pod 'SnapshotKit'
 
   end
 

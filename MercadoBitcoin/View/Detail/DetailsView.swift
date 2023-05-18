@@ -45,6 +45,11 @@ final class DetailsView: UIView {
 
     var coin: Bitcoin?
     let screenSize = UIScreen.main.bounds
+    
+    private let kLabelMargin: CGFloat = 20
+    private let kImageTrailingMargin: CGFloat = 10
+    private let kImageBottomMargin: CGFloat = 80
+    private let kImageSize: CGFloat = 200
 
     init(coin: Bitcoin?) {
         super.init(frame: .zero)
@@ -75,19 +80,19 @@ final class DetailsView: UIView {
         contentView.addSubviews(volumeLabel)
 
         NSLayoutConstraint.activate([
-            nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
-            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
-            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
+            nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: kLabelMargin),
+            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: kLabelMargin),
+            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -kLabelMargin),
 
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.heightAnchor.constraint(equalToConstant: screenSize.height / 2),
 
-            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 10),
-            imageView.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: 80),
-            imageView.heightAnchor.constraint(equalToConstant: 200),
-            imageView.widthAnchor.constraint(equalToConstant: 200),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: kImageTrailingMargin),
+            imageView.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: kImageBottomMargin),
+            imageView.heightAnchor.constraint(equalToConstant: kImageSize),
+            imageView.widthAnchor.constraint(equalToConstant: kImageSize),
 
             volumeLabel.leadingAnchor.constraint(equalTo: nameLabel.leadingAnchor),
             volumeLabel.trailingAnchor.constraint(equalTo: nameLabel.trailingAnchor),

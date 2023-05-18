@@ -29,6 +29,7 @@
 		1423EE8929970F8900D4B59E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 147ED4C52994942A0021332D /* LaunchScreen.storyboard */; };
 		1423EE8A29970F8900D4B59E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147ED4C32994942A0021332D /* Assets.xcassets */; };
 		142EE11E2A15CF66009191D8 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */; };
+		142EE1202A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EE11F2A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift */; };
 		14460B6B2A15A7BA00C4DA54 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */; };
 		14460B762A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14460B752A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift */; };
 		1449474F29971230004BA665 /* NetworkProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4F2299496AC0021332D /* NetworkProvider.swift */; };
@@ -96,6 +97,7 @@
 		1423EE5429970AF800D4B59E /* Extension+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Bundle.swift"; sourceTree = "<group>"; };
 		1423EE8E29970F8900D4B59E /* MercadoBitcoinMock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoinMock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1423EE9129970FF300D4B59E /* NetworkProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProvider.swift; sourceTree = "<group>"; };
+		142EE11F2A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinRequestErrorTest.swift; sourceTree = "<group>"; };
 		14460B6A2A15A7BA00C4DA54 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		14460B752A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MercadoBitcoinSnapshotTests.swift; sourceTree = "<group>"; };
 		147ED4B7299494280021332D /* MercadoBitcoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MercadoBitcoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -242,6 +244,7 @@
 			children = (
 				147ED4D12994942A0021332D /* MercadoBitcoinTests.swift */,
 				14460B752A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift */,
+				142EE11F2A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift */,
 			);
 			path = MercadoBitcoinTests;
 			sourceTree = "<group>";
@@ -688,6 +691,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14460B762A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift in Sources */,
+				142EE1202A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift in Sources */,
 				147ED4D22994942A0021332D /* MercadoBitcoinTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
