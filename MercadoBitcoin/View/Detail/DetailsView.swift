@@ -38,7 +38,8 @@ final class DetailsView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 40, weight: .bold)
-        label.numberOfLines = 0
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
         return label
     }()
 
@@ -62,7 +63,7 @@ final class DetailsView: UIView {
             guard let coin = self.coin, let volume = coin.volume else { return }
 
             self.nameLabel.text = coin.name
-            self.volumeLabel.text = "USD \(String(describing: volume))"
+            self.volumeLabel.text = self.cleanDollars(String(volume))
             self.volumeLabel.textColor = volume == 0.0 ? .systemBlue : UIColor(red: 0.00, green: 0.40, blue: 0.00, alpha: 1.00)
         }
 
