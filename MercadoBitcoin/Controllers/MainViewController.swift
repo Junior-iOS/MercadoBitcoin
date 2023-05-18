@@ -19,7 +19,6 @@ final class MainViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-//        setupConstraints()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -38,18 +37,6 @@ final class MainViewController: BaseViewController {
         navigationController?.navigationBar.isTranslucent = true
         
         bitcoinListView.delegate = self
-    }
-
-    private func setupConstraints() {
-        view.addSubview(bitcoinListView)
-        bitcoinListView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            bitcoinListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            bitcoinListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            bitcoinListView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            bitcoinListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
     }
 
     private func setupErrorView() {
