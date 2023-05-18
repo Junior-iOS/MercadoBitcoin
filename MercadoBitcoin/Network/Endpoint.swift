@@ -9,7 +9,7 @@ import Foundation
 
 struct Endpoint {
     let path: String
-    
+
     var url: URL? {
         var urlComponents = URLComponents()
         urlComponents.scheme = Bundle.main.scheme
@@ -17,8 +17,8 @@ struct Endpoint {
         urlComponents.path = path
         return urlComponents.url
     }
-    
-    static func searchList() -> Endpoint {
-        Endpoint(path: Bundle.main.endpoint)
+
+    static func searchList() -> Self {
+        Self(path: Bundle.main.endpoint)
     }
 }

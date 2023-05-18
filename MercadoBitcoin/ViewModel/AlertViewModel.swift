@@ -9,11 +9,10 @@ import Foundation
 import UIKit
 
 struct AlertViewModel {
-    
     // MARK: - Properties
     var title: String
     var message: String
-        
+
     // MARK: - Init
     init(networkErrorModel: NetworkError) {
         switch networkErrorModel {
@@ -35,4 +34,3 @@ struct AlertViewModel {
         }
     }
 }
-

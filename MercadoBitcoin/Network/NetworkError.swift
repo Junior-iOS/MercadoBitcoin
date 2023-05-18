@@ -13,7 +13,7 @@ enum NetworkError: Error, CustomNSError {
     case invalidResponse
     case noData
     case serializationError
-    
+
     var localizedDescription: String {
         switch self {
         case .apiError:

@@ -3,7 +3,6 @@ import XCTest
 @testable import MercadoBitcoin
 
 class RequestProviderProtocolTests: XCTestCase {
-
 //    var sut: RequestProviderProtocol!
 //
 //    override func setUpWithError() throws {

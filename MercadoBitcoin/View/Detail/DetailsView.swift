@@ -8,7 +8,6 @@
 import UIKit
 
 final class DetailsView: UIView {
-    
     private lazy var contentView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -17,7 +16,7 @@ final class DetailsView: UIView {
         view.clipsToBounds = true
         return view
     }()
-    
+
     private let imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +24,7 @@ final class DetailsView: UIView {
         imageView.contentMode = .scaleAspectFit
         return imageView
     }()
-    
+
     private let nameLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -34,7 +33,7 @@ final class DetailsView: UIView {
         label.numberOfLines = 0
         return label
     }()
-    
+
     private let volumeLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -42,7 +41,7 @@ final class DetailsView: UIView {
         label.numberOfLines = 0
         return label
     }()
-    
+
     var coin: Bitcoin?
     let screenSize = UIScreen.main.bounds
 
@@ -51,39 +50,39 @@ final class DetailsView: UIView {
         self.coin = coin
         setup()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func setup() {
         backgroundColor = UIColor(red: 0.12, green: 0.13, blue: 0.14, alpha: 1.00)
-        
+
         DispatchQueue.main.async {
             guard let coin = self.coin, let volume = coin.volume else { return }
-            
+
             self.nameLabel.text = coin.name
             self.volumeLabel.text = "USD \(String(describing: volume))"
             self.volumeLabel.textColor = volume == 0.0 ? .systemBlue : UIColor(red: 0.00, green: 0.40, blue: 0.00, alpha: 1.00)
         }
-        
+
         setupConstraints()
     }
-    
+
     private func setupConstraints() {
         addSubviews(nameLabel, contentView, imageView)
         contentView.addSubviews(volumeLabel)
-        
+
         NSLayoutConstraint.activate([
             nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: 20),
             nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 20),
             nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -20),
-            
+
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),
             contentView.bottomAnchor.constraint(equalTo: bottomAnchor),
             contentView.heightAnchor.constraint(equalToConstant: screenSize.height / 2),
-            
+
             imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 10),
             imageView.bottomAnchor.constraint(equalTo: contentView.topAnchor, constant: 80),
             imageView.heightAnchor.constraint(equalToConstant: 200),

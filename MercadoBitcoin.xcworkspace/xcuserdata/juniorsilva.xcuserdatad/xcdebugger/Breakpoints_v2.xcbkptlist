@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "11987F6C-9311-482A-868A-5D97B71E5D96"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "80B360DE-4509-4176-AA5A-34C8081B8B2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MercadoBitcoin/ViewModel/BitcoinListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9F57FB9-3DF1-4220-8156-21B2ABE90518"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MercadoBitcoin/View/BitcoinList/BitcoinListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "didSelectCoin(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B60C7EDF-98CE-4FCD-979C-6F9B2601C09A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MercadoBitcoin/Controllers/MainViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "setBitcoinListView(with:didSelectCoin:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "B60C7EDF-98CE-4FCD-979C-6F9B2601C09A - e99cdd2fc1b8255c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MercadoBitcoinMock.MainViewController.setBitcoinListView(with: MercadoBitcoinMock.BitcoinListView, didSelectCoin: MercadoBitcoinMock.Bitcoin) -&gt; ()"
+                  moduleName = "MercadoBitcoinMock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juniorsilva/Projetos%20iOS/MercadoBitcoin/MercadoBitcoin/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "77"
+                  endingLineNumber = "77"
+                  offsetFromSymbolStart = "220">
+               </Location>
+               <Location
+                  uuid = "B60C7EDF-98CE-4FCD-979C-6F9B2601C09A - e99cdd2fc1b8253b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MercadoBitcoinMock.MainViewController.setBitcoinListView(with: MercadoBitcoinMock.BitcoinListView, didSelectCoin: MercadoBitcoinMock.Bitcoin) -&gt; ()"
+                  moduleName = "MercadoBitcoinMock"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/juniorsilva/Projetos%20iOS/MercadoBitcoin/MercadoBitcoin/Controllers/MainViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78"
+                  offsetFromSymbolStart = "220">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

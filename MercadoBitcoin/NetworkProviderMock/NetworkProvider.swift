@@ -8,26 +8,24 @@
 import Foundation
 
 protocol NetworkProviderProtocol: AnyObject {
-    func fetchData(_ endpoint: Endpoint, completion: @escaping (Result<[Bitcoin], NetworkError>) -> Void)
+    func execute<T: Codable>(_ endpoint: Endpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void)
 }
 
 final class NetworkProvider: NetworkProviderProtocol {
-    private init() {}
-    static let shared = NetworkProvider()
     
-    func fetchData(_ endpoint: Endpoint, completion: @escaping (Result<[Bitcoin], NetworkError>) -> Void) {
+    func execute<T: Codable>(_ endpoint: Endpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.invalidEndpoint))
             return
         }
-        
+
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
         request.setValue(Bundle.main.apiKey, forHTTPHeaderField: "X-CoinAPI-Key")
-        
+
         loadUrlAndDecode(request, completion: completion)
     }
-    
+
     private func loadUrlAndDecode<T: Decodable>(_ url: URLRequest, completion: @escaping (Result<T, NetworkError>) -> Void) {
         let json = """
         [
@@ -621,11 +619,11 @@ final class NetworkProvider: NetworkProviderProtocol {
                 },
         ]
         """.data(using: .utf8)!
-        
+
                 let decodedResponse = try! JSONDecoder().decode(T.self, from: json)
                 self.executeCompletionHandler(with: .success(decodedResponse), completion: completion)
     }
-    
+
     private func executeCompletionHandler<T: Decodable>(with result: Result<T, NetworkError>, completion: @escaping (Result<T, NetworkError>) -> Void) {
         DispatchQueue.main.async {
             completion(result)

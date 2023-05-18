@@ -17,11 +17,10 @@ struct Bitcoin: Codable {
     let exchangeId: String?
     let name: String?
     let volume: Double?
-    
+
     enum CodingKeys: String, CodingKey {
         case exchangeId = "exchange_id"
         case name
         case volume = "volume_1day_usd"
     }
 }
-

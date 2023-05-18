@@ -8,11 +8,10 @@
 import UIKit
 
 final class BitcoinListTableViewCell: UITableViewCell {
-    
     let exchangeIdLabel = UILabel()
     let nameLabel = UILabel()
     let volumeLabel = UILabel()
-    
+
     private lazy var cellBackgroundView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -21,7 +20,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
         view.clipsToBounds = true
         return view
     }()
-    
+
     private lazy var vStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [exchangeIdLabel, nameLabel])
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -29,7 +28,7 @@ final class BitcoinListTableViewCell: UITableViewCell {
         stack.distribution = .fillEqually
         return stack
     }()
-    
+
     private lazy var hStack: UIStackView = {
         let stack = UIStackView(arrangedSubviews: [vStack, volumeLabel])
         stack.translatesAutoresizingMaskIntoConstraints = false
@@ -38,48 +37,51 @@ final class BitcoinListTableViewCell: UITableViewCell {
         return stack
     }()
     
+    private let kMargins: CGFloat = 10
+    private let kLabelHeight: CGFloat = 20
+
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupCell()
     }
-    
+
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     override func prepareForReuse() {
         super.prepareForReuse()
         exchangeIdLabel.text = nil
         nameLabel.text = nil
         volumeLabel.text = nil
     }
-    
+
     private func setupCell() {
         contentView.backgroundColor = UIColor(red: 1.00, green: 0.58, blue: 0.08, alpha: 1.00)
         contentView.addSubview(cellBackgroundView)
         cellBackgroundView.addSubview(hStack)
-        
+
         NSLayoutConstraint.activate([
-            cellBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 10),
-            cellBackgroundView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10),
-            cellBackgroundView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10),
-            cellBackgroundView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -10),
-            
-            hStack.topAnchor.constraint(equalTo: cellBackgroundView.topAnchor, constant: 10),
-            hStack.leadingAnchor.constraint(equalTo: cellBackgroundView.leadingAnchor, constant: 10),
-            hStack.trailingAnchor.constraint(equalTo: cellBackgroundView.trailingAnchor, constant: -10),
-            hStack.bottomAnchor.constraint(equalTo: cellBackgroundView.bottomAnchor, constant: -10)
+            cellBackgroundView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: kMargins),
+            cellBackgroundView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: kMargins),
+            cellBackgroundView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -kMargins),
+            cellBackgroundView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -kMargins),
+
+            hStack.topAnchor.constraint(equalTo: cellBackgroundView.topAnchor, constant: kMargins),
+            hStack.leadingAnchor.constraint(equalTo: cellBackgroundView.leadingAnchor, constant: kMargins),
+            hStack.trailingAnchor.constraint(equalTo: cellBackgroundView.trailingAnchor, constant: -kMargins),
+            hStack.bottomAnchor.constraint(equalTo: cellBackgroundView.bottomAnchor, constant: -kMargins)
         ])
-        
+
         exchangeIdLabel.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             exchangeIdLabel.widthAnchor.constraint(equalToConstant: contentView.bounds.width),
-            exchangeIdLabel.heightAnchor.constraint(equalToConstant: 20)
+            exchangeIdLabel.heightAnchor.constraint(equalToConstant: kLabelHeight)
         ])
-        
+
         setupLabels()
     }
-    
+
     private func setupLabels() {
         exchangeIdLabel.font = .systemFont(ofSize: 17, weight: .semibold)
         exchangeIdLabel.numberOfLines = 0
@@ -94,12 +96,25 @@ final class BitcoinListTableViewCell: UITableViewCell {
         volumeLabel.numberOfLines = 0
     }
     
+    private func cleanDollars(_ value: String?) -> String {
+        guard value != nil else { return "$0.00" }
+        let doubleValue = Double(value!) ?? 0.0
+        let formatter = NumberFormatter()
+        formatter.currencyCode = "USD"
+        formatter.currencySymbol = "$"
+        formatter.minimumFractionDigits = (value!.contains(".00")) ? 0 : 2
+        formatter.maximumFractionDigits = 2
+        formatter.numberStyle = .currencyAccounting
+        return formatter.string(from: NSNumber(value: doubleValue)) ?? "$\(doubleValue)"
+    }
+
     func configure(list: Bitcoin?) {
-        guard let list = list, let volume = list.volume else { return }
+        guard let list, let volume = list.volume else { return }
+        
         DispatchQueue.main.async {
             self.exchangeIdLabel.text = list.exchangeId
             self.nameLabel.text = list.name
-            self.volumeLabel.text = "USD \(String(describing: volume))"
+            self.volumeLabel.text = self.cleanDollars(String(volume))
             self.volumeLabel.textColor = volume == 0.0 ? .systemBlue : UIColor(red: 0.00, green: 0.40, blue: 0.00, alpha: 1.00)
         }
     }

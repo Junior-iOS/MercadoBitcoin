@@ -6,7 +6,6 @@ import XCTest
 typealias DataCompletion = (Data?, URLResponse?, Error?) -> Void
 
 class ServiceProviderProtocolTests: XCTestCase {
-
 //    let correctJsonData = """
 //        {
 //          "champions" : [
@@ -243,7 +242,7 @@ class ServiceProviderProtocolTests: XCTestCase {
 
 }
 
-//class ServiceProvider: ServiceProviderProtocol {
+// class ServiceProvider: ServiceProviderProtocol {
 //
 //    var customURLSession: URLSession
 //
@@ -255,4 +254,4 @@ class ServiceProviderProtocolTests: XCTestCase {
 //        self.customURLSession = customURLSession
 //    }
 //
-//}
+// }

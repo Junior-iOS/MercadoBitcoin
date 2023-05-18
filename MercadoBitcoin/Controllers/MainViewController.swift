@@ -8,37 +8,42 @@
 import UIKit
 
 final class MainViewController: BaseViewController {
-    
     private let bitcoinListView = BitcoinListView()
     private let errorView = ErrorView()
+    
+    override func loadView() {
+        super.loadView()
+        self.view = bitcoinListView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        setupConstraints()
+//        setupConstraints()
     }
-    
+
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.tintColor = .systemOrange
     }
-    
+
     private func setup() {
         view.backgroundColor = .systemBackground
-        
+
         title = Bundle.main.title
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationItem.largeTitleDisplayMode = .always
-        
+
         navigationController?.navigationBar.shadowImage = UIImage()
         navigationController?.navigationBar.isTranslucent = true
+        
+        bitcoinListView.delegate = self
     }
-    
+
     private func setupConstraints() {
         view.addSubview(bitcoinListView)
         bitcoinListView.translatesAutoresizingMaskIntoConstraints = false
-        bitcoinListView.delegate = self
-        
+
         NSLayoutConstraint.activate([
             bitcoinListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             bitcoinListView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
@@ -46,12 +51,12 @@ final class MainViewController: BaseViewController {
             bitcoinListView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
         ])
     }
-    
+
     private func setupErrorView() {
         view.addSubview(errorView)
         errorView.translatesAutoresizingMaskIntoConstraints = false
         errorView.delegate = self
-        
+
         NSLayoutConstraint.activate([
             errorView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             errorView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
@@ -68,7 +73,7 @@ extension MainViewController: BitcoinListViewViewDelegate {
             self.setupErrorView()
         }
     }
-    
+
     func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectCoin coin: Bitcoin) {
         let vc = DetailViewController()
         vc.coin = coin

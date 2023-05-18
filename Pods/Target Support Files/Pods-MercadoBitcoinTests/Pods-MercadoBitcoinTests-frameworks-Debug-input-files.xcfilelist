@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/Pods-MercadoBitcoinTests/Pods-MercadoBitcoinTests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SnapshotKit/SnapshotKit.framework
+${BUILT_PRODUCTS_DIR}/SnapshotTesting/SnapshotTesting.framework
