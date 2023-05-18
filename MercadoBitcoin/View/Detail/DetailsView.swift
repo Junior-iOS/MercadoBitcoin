@@ -80,9 +80,9 @@ final class DetailsView: UIView {
         contentView.addSubviews(volumeLabel)
 
         NSLayoutConstraint.activate([
-            nameLabel.topAnchor.constraint(equalTo: topAnchor, constant: kLabelMargin),
-            nameLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: kLabelMargin),
-            nameLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -kLabelMargin),
+            nameLabel.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: kLabelMargin),
+            nameLabel.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: kLabelMargin),
+            nameLabel.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor, constant: -kLabelMargin),
 
             contentView.leadingAnchor.constraint(equalTo: leadingAnchor),
             contentView.trailingAnchor.constraint(equalTo: trailingAnchor),

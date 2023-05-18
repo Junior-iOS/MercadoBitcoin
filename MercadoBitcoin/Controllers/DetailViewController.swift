@@ -10,10 +10,14 @@ import UIKit
 final class DetailViewController: BaseViewController {
     var coin: Bitcoin?
     private lazy var detailsView = DetailsView(coin: coin)
+    
+    override func loadView() {
+        super.loadView()
+        self.view = detailsView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setup()
     }
 
@@ -21,19 +25,5 @@ final class DetailViewController: BaseViewController {
         view.backgroundColor = .systemBackground
         defaultBackButton()
         title = coin?.exchangeId
-
-        setupConstraints()
-    }
-
-    private func setupConstraints() {
-        view.addSubview(detailsView)
-        detailsView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint.activate([
-            detailsView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            detailsView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor),
-            detailsView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor),
-            detailsView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor)
-        ])
     }
 }
