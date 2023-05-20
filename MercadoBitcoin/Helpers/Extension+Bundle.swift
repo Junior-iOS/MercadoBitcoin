@@ -9,22 +9,27 @@ import Foundation
 
 extension Bundle {
     var apiKey: String {
-        self.object(forInfoDictionaryKey: "API_KEY") as! String
+        guard let apiKey = self.object(forInfoDictionaryKey: "API_KEY") as? String else { return "" }
+        return apiKey
     }
-
+    
     var scheme: String {
-        self.object(forInfoDictionaryKey: "SCHEME") as! String
+        guard let scheme = self.object(forInfoDictionaryKey: "SCHEME") as? String else { return ""}
+        return scheme
     }
-
+    
     var host: String {
-        self.object(forInfoDictionaryKey: "HOST") as! String
+        guard let host = self.object(forInfoDictionaryKey: "HOST") as? String else { return ""}
+        return host
     }
-
+    
     var endpoint: String {
-        self.object(forInfoDictionaryKey: "ENDPOINT") as! String
+        guard let endpoint = self.object(forInfoDictionaryKey: "ENDPOINT") as? String else { return ""}
+        return endpoint
     }
-
+    
     var title: String {
-        self.object(forInfoDictionaryKey: "TITLE") as! String
+        guard let title = self.object(forInfoDictionaryKey: "TITLE") as? String else { return ""}
+        return title
     }
 }

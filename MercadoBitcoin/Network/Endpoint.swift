@@ -17,6 +17,14 @@ struct Endpoint {
         urlComponents.path = path
         return urlComponents.url
     }
+    
+    var headerValue: String {
+        Bundle.main.apiKey
+    }
+    
+    var headerField: String {
+        "X-CoinAPI-Key"
+    }
 
     static func searchList() -> Self {
         Self(path: Bundle.main.endpoint)

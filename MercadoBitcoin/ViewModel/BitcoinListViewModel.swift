@@ -39,4 +39,11 @@ final class BitcoinListViewModel: NSObject {
             }
         }
     }
+    
+    func routeTo(_ viewController: UIViewController, with coin: Bitcoin) {
+        let vc = DetailViewController()
+        vc.coin = coin
+        vc.navigationItem.largeTitleDisplayMode = .never
+        viewController.navigationController?.pushViewController(vc, animated: true)
+    }
 }

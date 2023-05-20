@@ -10,14 +10,13 @@ import UIKit
 
 final class ErrorHandler: NSObject {
     static let shared = ErrorHandler()
+    private var viewModel = AlertViewModel(networkErrorModel: .noData)
 
     override private init() {
         super.init()
     }
 
     func showAlertFor(error: NetworkError?, from controller: UIViewController) {
-        var viewModel: AlertViewModel!
-
         if let error {
             viewModel = AlertViewModel(networkErrorModel: error)
         }

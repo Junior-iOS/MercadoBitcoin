@@ -8,16 +8,10 @@
 import Foundation
 import UIKit
 
-protocol BitcoinListViewViewDelegate: AnyObject {
-    func setBitcoinListView(with bitcoinListView: BitcoinListView, didSelectCoin coin: Bitcoin)
-    func errorWasFound(_ error: NetworkError)
-}
-
 final class BitcoinListView: UIView {
     let viewModel = BitcoinListViewModel()
-    weak var delegate: BitcoinListViewViewDelegate?
 
-    private let spinner: UIActivityIndicatorView = {
+    let spinner: UIActivityIndicatorView = {
         let spinner = UIActivityIndicatorView(style: .large)
         spinner.hidesWhenStopped = true
         spinner.color = .systemOrange
@@ -26,7 +20,7 @@ final class BitcoinListView: UIView {
         return spinner
     }()
 
-    private let tableView: UITableView = {
+    let tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(cellClass: BitcoinListTableViewCell.self)
@@ -39,21 +33,11 @@ final class BitcoinListView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-
-        setupTableView()
-        viewModel.fetchBitcoinList()
-        viewModel.delegate = self
+        setupConstraints()
     }
 
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-
-    private func setupTableView() {
-        tableView.dataSource = self
-        tableView.delegate = self
-
-        setupConstraints()
     }
 
     private func setupConstraints() {
@@ -68,39 +52,5 @@ final class BitcoinListView: UIView {
             spinner.centerXAnchor.constraint(equalTo: centerXAnchor),
             spinner.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
-    }
-}
-
-extension BitcoinListView: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-
-        guard let coin = viewModel.list?[indexPath.row] else { return }
-        delegate?.setBitcoinListView(with: self, didSelectCoin: coin)
-    }
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        viewModel.list?.count ?? 0
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        tableView.dequeueReusableCell(of: BitcoinListTableViewCell.self, for: indexPath) { [weak self] cell in
-            guard let self, let list = self.viewModel.list?[indexPath.row] else { return }
-            cell.configure(list: list)
-        }
-    }
-}
-
-extension BitcoinListView: BitcoinListViewModelDelegate {
-    func didNotLoadList(_ error: NetworkError) {
-        self.spinner.stopAnimating()
-        delegate?.errorWasFound(error)
-    }
-
-    func didLoadList() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-            self.spinner.stopAnimating()
-        }
     }
 }

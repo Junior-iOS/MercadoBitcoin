@@ -8,9 +8,11 @@
 import UIKit
 
 final class DetailViewController: BaseViewController {
+    // MARK: - Properties
     var coin: Bitcoin?
     private lazy var detailsView = DetailsView(coin: coin)
     
+    // MARK: - Life cycle
     override func loadView() {
         super.loadView()
         self.view = detailsView
@@ -21,6 +23,7 @@ final class DetailViewController: BaseViewController {
         setup()
     }
 
+    // MARK: - Private Methods
     private func setup() {
         view.backgroundColor = .systemBackground
         defaultBackButton()
