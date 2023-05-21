@@ -12,7 +12,7 @@ final class MainViewController: BaseViewController {
     // MARK: - Properties
     private let bitcoinListView = BitcoinListView()
     private let errorView = ErrorView()
-    private let viewModel = BitcoinListViewModel()
+    private let viewModel: BitcoinListViewModel
 
     // MARK: - Life cycle
     override func loadView() {
@@ -32,6 +32,16 @@ final class MainViewController: BaseViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.navigationBar.tintColor = .systemOrange
+    }
+    
+    init(_ viewModel: BitcoinListViewModel = BitcoinListViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    @available(*, unavailable)
+    required init?(coder: NSCoder) {
+        nil
     }
 
     // MARK: - Private methods
