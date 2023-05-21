@@ -15,7 +15,6 @@
 		1423EE7829970F8900D4B59E /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
 		1423EE7929970F8900D4B59E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4BE299494280021332D /* MainViewController.swift */; };
 		1423EE7A29970F8900D4B59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4BA299494280021332D /* AppDelegate.swift */; };
-		1423EE7B29970F8900D4B59E /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50D2995422B0021332D /* ErrorHandler.swift */; };
 		1423EE7C29970F8900D4B59E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
 		1423EE7D29970F8900D4B59E /* BitcoinListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5002994B60A0021332D /* BitcoinListTableViewCell.swift */; };
 		1423EE7E29970F8900D4B59E /* BitcoinListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4FA2994AE9E0021332D /* BitcoinListViewModel.swift */; };
@@ -54,11 +53,11 @@
 		147ED5072994CB7A0021332D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5062994CB7A0021332D /* DetailViewController.swift */; };
 		147ED50A2995395A0021332D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5092995395A0021332D /* DetailsView.swift */; };
 		147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
-		147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50D2995422B0021332D /* ErrorHandler.swift */; };
 		147ED511299547960021332D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
 		14888E722A1A84A900359431 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */; };
 		14888E732A1A84A900359431 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */; };
 		14888E752A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E742A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift */; };
+		14888E772A1AA39D00359431 /* DetailsViewSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E762A1AA39D00359431 /* DetailsViewSnapshotTests.swift */; };
 		21CE14F9EBB6588754B030FF /* Pods_MercadoBitcoin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264E10079BFAFCBB103CC34D /* Pods_MercadoBitcoin.framework */; };
 		24A3FBF5E2AB54709E8123DA /* Pods_MercadoBitcoinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F23265F828D494744946CC4E /* Pods_MercadoBitcoinTests.framework */; };
 		26212B37382B3C7C51D40765 /* Pods_MercadoBitcoinMock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E96466DF88F7CFF9EDC3304E /* Pods_MercadoBitcoinMock.framework */; };
@@ -128,10 +127,10 @@
 		147ED5062994CB7A0021332D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		147ED5092995395A0021332D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		147ED50B29953FF30021332D /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
-		147ED50D2995422B0021332D /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
 		147ED510299547960021332D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		14888E742A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinListTableViewCellSnapshotsTests.swift; sourceTree = "<group>"; };
+		14888E762A1AA39D00359431 /* DetailsViewSnapshotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewSnapshotTests.swift; sourceTree = "<group>"; };
 		1E157B040168EC456D563ED2 /* Pods_MercadoBitcoinMock_MercadoBitcoinUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoinMock_MercadoBitcoinUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		264E10079BFAFCBB103CC34D /* Pods_MercadoBitcoin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MercadoBitcoin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68284E25A6C8F35F095F61E1 /* Pods-MercadoBitcoinMock-MercadoBitcoinUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MercadoBitcoinMock-MercadoBitcoinUITests.release.xcconfig"; path = "Target Support Files/Pods-MercadoBitcoinMock-MercadoBitcoinUITests/Pods-MercadoBitcoinMock-MercadoBitcoinUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -255,6 +254,7 @@
 				142EE11F2A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift */,
 				14460B752A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift */,
 				14888E742A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift */,
+				14888E762A1AA39D00359431 /* DetailsViewSnapshotTests.swift */,
 			);
 			path = MercadoBitcoinTests;
 			sourceTree = "<group>";
@@ -330,7 +330,6 @@
 		147ED4FC2994B18E0021332D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				147ED50D2995422B0021332D /* ErrorHandler.swift */,
 				147ED4FD2994B19F0021332D /* Extension+UIView.swift */,
 				147ED5022994B6450021332D /* Extension+UITableView.swift */,
 				147ED5042994BA560021332D /* Extension+UIViewController.swift */,
@@ -655,7 +654,6 @@
 				142EE11E2A15CF66009191D8 /* BaseViewController.swift in Sources */,
 				1423EE7929970F8900D4B59E /* MainViewController.swift in Sources */,
 				1423EE7A29970F8900D4B59E /* AppDelegate.swift in Sources */,
-				1423EE7B29970F8900D4B59E /* ErrorHandler.swift in Sources */,
 				1449474F29971230004BA665 /* NetworkProvider.swift in Sources */,
 				1423EE7C29970F8900D4B59E /* ErrorView.swift in Sources */,
 				1423EE7D29970F8900D4B59E /* BitcoinListTableViewCell.swift in Sources */,
@@ -683,7 +681,6 @@
 				14460B6B2A15A7BA00C4DA54 /* BaseViewController.swift in Sources */,
 				147ED4BF299494280021332D /* MainViewController.swift in Sources */,
 				147ED4BB299494280021332D /* AppDelegate.swift in Sources */,
-				147ED50E2995422B0021332D /* ErrorHandler.swift in Sources */,
 				144947502997125B004BA665 /* NetworkProvider.swift in Sources */,
 				147ED511299547960021332D /* ErrorView.swift in Sources */,
 				147ED5012994B60A0021332D /* BitcoinListTableViewCell.swift in Sources */,
@@ -704,6 +701,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14888E752A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift in Sources */,
+				14888E772A1AA39D00359431 /* DetailsViewSnapshotTests.swift in Sources */,
 				14460B762A15BFB400C4DA54 /* MercadoBitcoinSnapshotTests.swift in Sources */,
 				142EE1202A15E2F0009191D8 /* MercadoBitcoinRequestErrorTest.swift in Sources */,
 				147ED4D22994942A0021332D /* MercadoBitcoinTests.swift in Sources */,
