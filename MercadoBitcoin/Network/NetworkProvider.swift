@@ -7,19 +7,15 @@
 
 import Foundation
 
-protocol NetworkProviderProtocol: AnyObject {
-    func execute<T: Codable>(_ endpoint: Endpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void)
-}
-
 final class NetworkProvider: NetworkProviderProtocol {
-    func execute<T: Codable>(_ endpoint: Endpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
+    func execute<T: Codable>(_ endpoint: MercadoBitcoinEndpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         guard let url = endpoint.url else {
             completion(.failure(.invalidEndpoint))
             return
         }
 
         var request = URLRequest(url: url)
-        request.httpMethod = "GET"
+        request.httpMethod = endpoint.method
         request.setValue(endpoint.headerValue, forHTTPHeaderField: endpoint.headerField)
 
         loadUrlAndDecode(request, completion: completion)

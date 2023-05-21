@@ -16,13 +16,15 @@ final class ErrorHandler: NSObject {
         super.init()
     }
 
-    func showAlertFor(error: NetworkError?, from controller: UIViewController) {
+    func showAlertFor(error: NetworkError?, from controller: MainViewController) {
         if let error {
             viewModel = AlertViewModel(networkErrorModel: error)
         }
 
         let alert = UIAlertController(title: viewModel.title, message: viewModel.message, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { _ in
+            controller.errorView.isHidden.toggle()
+        }))
         controller.present(alert, animated: true, completion: nil)
     }
 }

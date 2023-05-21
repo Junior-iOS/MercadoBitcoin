@@ -11,14 +11,14 @@ import UIKit
 final class BitcoinListView: UIView {
     let viewModel = BitcoinListViewModel()
 
-    let spinner: UIActivityIndicatorView = {
-        let spinner = UIActivityIndicatorView(style: .large)
-        spinner.hidesWhenStopped = true
-        spinner.color = .systemOrange
-        spinner.startAnimating()
-        spinner.translatesAutoresizingMaskIntoConstraints = false
-        return spinner
-    }()
+//    let spinner: UIActivityIndicatorView = {
+//        let spinner = UIActivityIndicatorView(style: .large)
+//        spinner.hidesWhenStopped = true
+//        spinner.color = .systemOrange
+////        spinner.startAnimating()
+//        spinner.translatesAutoresizingMaskIntoConstraints = false
+//        return spinner
+//    }()
 
     let tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
@@ -40,17 +40,17 @@ final class BitcoinListView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func setupConstraints() {
-        addSubviews(tableView, spinner)
+    func setupConstraints() {
+        addSubviews(tableView)
 
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
             tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
-            tableView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor),
+            tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
 
-            spinner.centerXAnchor.constraint(equalTo: centerXAnchor),
-            spinner.centerYAnchor.constraint(equalTo: centerYAnchor)
+//            spinner.centerXAnchor.constraint(equalTo: centerXAnchor),
+//            spinner.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

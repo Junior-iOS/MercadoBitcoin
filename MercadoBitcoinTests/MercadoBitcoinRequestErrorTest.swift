@@ -7,7 +7,7 @@
 
 import XCTest
 
-@testable import MercadoBitcoin
+@testable import MercadoBitcoinMock
 
 class MercadoBitcoinRequestErrorTest: XCTestCase {
 

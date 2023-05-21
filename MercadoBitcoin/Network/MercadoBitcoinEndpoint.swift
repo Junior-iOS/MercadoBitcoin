@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Endpoint {
+struct MercadoBitcoinEndpoint {
     let path: String
+    let method: String
 
     var url: URL? {
         var urlComponents = URLComponents()
@@ -27,6 +28,6 @@ struct Endpoint {
     }
 
     static func searchList() -> Self {
-        Self(path: Bundle.main.endpoint)
+        Self(path: Bundle.main.endpoint, method: "GET")
     }
 }

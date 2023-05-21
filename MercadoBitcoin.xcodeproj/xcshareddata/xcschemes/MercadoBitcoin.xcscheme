@@ -28,28 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "147ED4CC2994942A0021332D"
-               BuildableName = "MercadoBitcoinTests.xctest"
-               BlueprintName = "MercadoBitcoinTests"
-               ReferencedContainer = "container:MercadoBitcoin.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO"
-            parallelizable = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "147ED4D62994942A0021332D"
-               BuildableName = "MercadoBitcoinUITests.xctest"
-               BlueprintName = "MercadoBitcoinUITests"
-               ReferencedContainer = "container:MercadoBitcoin.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

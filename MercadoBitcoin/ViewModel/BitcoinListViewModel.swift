@@ -28,14 +28,16 @@ final class BitcoinListViewModel: NSObject {
 
     func fetchBitcoinList() {
         service.execute(.searchList(), expecting: [Bitcoin].self) { [weak self] result in
-            guard let self else { return }
+            DispatchQueue.main.async {
+                guard let self else { return }
 
-            switch result {
-            case .success(let model):
-                list = model
+                switch result {
+                case .success(let model):
+                    self.list = model
 
-            case .failure(let failure):
-                delegate?.didNotLoadList(failure)
+                case .failure(let failure):
+                    self.delegate?.didNotLoadList(failure)
+                }
             }
         }
     }

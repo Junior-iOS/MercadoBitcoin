@@ -5,7 +5,7 @@
 //  Created by NJ Development on 16/05/23.
 //
 
-@testable import MercadoBitcoin
+@testable import MercadoBitcoinMock
 import XCTest
 
 final class MercadoBitcoinTests: XCTestCase {
@@ -37,11 +37,9 @@ final class MercadoBitcoinTests: XCTestCase {
 }
 
 class MockNetworkProvider: NetworkProviderProtocol {
-    func execute<T>(_ endpoint: MercadoBitcoin.Endpoint, expecting type: T.Type, completion: @escaping (Result<T, MercadoBitcoin.NetworkError>) -> Void) where T : Decodable, T : Encodable { }
     
-    var mockResult: ((Result<[MercadoBitcoin.Bitcoin], MercadoBitcoin.NetworkError>) -> Void)!
-
-    func fetchData(_ endpoint: MercadoBitcoin.Endpoint, completion: @escaping (Result<[MercadoBitcoin.Bitcoin], MercadoBitcoin.NetworkError>) -> Void) {
-        mockResult = completion
-    }
+    func execute<T>(_ endpoint: MercadoBitcoinMock.MercadoBitcoinEndpoint, expecting type: T.Type, completion: @escaping (Result<T, MercadoBitcoinMock.NetworkError>) -> Void) where T : Decodable, T : Encodable { }
+    
+    var mockResult: ((Result<[MercadoBitcoinMock.Bitcoin], MercadoBitcoinMock.NetworkError>) -> Void)!
+    
 }
