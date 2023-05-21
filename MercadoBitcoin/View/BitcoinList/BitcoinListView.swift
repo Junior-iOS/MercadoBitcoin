@@ -11,15 +11,6 @@ import UIKit
 final class BitcoinListView: UIView {
     let viewModel = BitcoinListViewModel()
 
-//    let spinner: UIActivityIndicatorView = {
-//        let spinner = UIActivityIndicatorView(style: .large)
-//        spinner.hidesWhenStopped = true
-//        spinner.color = .systemOrange
-////        spinner.startAnimating()
-//        spinner.translatesAutoresizingMaskIntoConstraints = false
-//        return spinner
-//    }()
-
     let tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -48,9 +39,6 @@ final class BitcoinListView: UIView {
             tableView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: safeAreaLayoutGuide.trailingAnchor),
             tableView.bottomAnchor.constraint(equalTo: bottomAnchor)
-
-//            spinner.centerXAnchor.constraint(equalTo: centerXAnchor),
-//            spinner.centerYAnchor.constraint(equalTo: centerYAnchor)
         ])
     }
 }

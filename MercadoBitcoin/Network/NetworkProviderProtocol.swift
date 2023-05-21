@@ -2,7 +2,7 @@
 //  NetworkProviderProtocol.swift
 //  MercadoBitcoin
 //
-//  Created by Junior Silva on 21/05/23.
+//  Created by NJ Development on 21/05/23.
 //
 
 import Foundation

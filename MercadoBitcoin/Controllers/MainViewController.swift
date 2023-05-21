@@ -10,6 +10,15 @@ import UIKit
 final class MainViewController: BaseViewController {
     
     // MARK: - Properties
+    let spinner: UIActivityIndicatorView = {
+        let spinner = UIActivityIndicatorView(style: .large)
+        spinner.hidesWhenStopped = true
+        spinner.color = .systemOrange
+        spinner.startAnimating()
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+        return spinner
+    }()
+    
     private let bitcoinListView = BitcoinListView()
     let errorView = ErrorView()
     private let viewModel: BitcoinListViewModel
@@ -58,7 +67,8 @@ final class MainViewController: BaseViewController {
     }
     
     private func addComponents() {
-        view.addSubviews(bitcoinListView, errorView)
+        view.addSubviews(bitcoinListView, spinner, errorView)
+        
         errorView.translatesAutoresizingMaskIntoConstraints = false
         errorView.delegate = self
         bitcoinListView.translatesAutoresizingMaskIntoConstraints = false
@@ -72,7 +82,10 @@ final class MainViewController: BaseViewController {
             bitcoinListView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             bitcoinListView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             bitcoinListView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            bitcoinListView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            bitcoinListView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
+            
+            spinner.centerXAnchor.constraint(equalTo: bitcoinListView.centerXAnchor),
+            spinner.centerYAnchor.constraint(equalTo: bitcoinListView.centerYAnchor)
         ])
     }
     
@@ -110,10 +123,9 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 // MARK: - BitcoinListView delegate
 extension MainViewController: BitcoinListViewModelDelegate {
     func didNotLoadList(_ error: NetworkError) {
-        //        bitcoinListView.spinner.stopAnimating()
+        spinner.stopAnimating()
         
         DispatchQueue.main.async {
-//            ErrorHandler.shared.showAlertFor(error: error, from: self)
             self.setupErrorView()
         }
     }
@@ -121,7 +133,7 @@ extension MainViewController: BitcoinListViewModelDelegate {
     func didLoadList() {
         DispatchQueue.main.async {
             self.bitcoinListView.tableView.reloadData()
-            //            self.bitcoinListView.spinner.stopAnimating()
+            self.spinner.stopAnimating()
         }
     }
 }

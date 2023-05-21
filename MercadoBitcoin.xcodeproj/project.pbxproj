@@ -12,7 +12,6 @@
 		1423EE7529970F8900D4B59E /* Exchanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4F0299495DB0021332D /* Exchanges.swift */; };
 		1423EE7629970F8900D4B59E /* Extension+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1423EE5429970AF800D4B59E /* Extension+Bundle.swift */; };
 		1423EE7729970F8900D4B59E /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4FD2994B19F0021332D /* Extension+UIView.swift */; };
-		1423EE7829970F8900D4B59E /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
 		1423EE7929970F8900D4B59E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4BE299494280021332D /* MainViewController.swift */; };
 		1423EE7A29970F8900D4B59E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED4BA299494280021332D /* AppDelegate.swift */; };
 		1423EE7C29970F8900D4B59E /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
@@ -52,7 +51,6 @@
 		147ED5052994BA560021332D /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5042994BA560021332D /* Extension+UIViewController.swift */; };
 		147ED5072994CB7A0021332D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5062994CB7A0021332D /* DetailViewController.swift */; };
 		147ED50A2995395A0021332D /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED5092995395A0021332D /* DetailsView.swift */; };
-		147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED50B29953FF30021332D /* AlertViewModel.swift */; };
 		147ED511299547960021332D /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147ED510299547960021332D /* ErrorView.swift */; };
 		14888E722A1A84A900359431 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */; };
 		14888E732A1A84A900359431 /* NetworkProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */; };
@@ -126,7 +124,6 @@
 		147ED5042994BA560021332D /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		147ED5062994CB7A0021332D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		147ED5092995395A0021332D /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
-		147ED50B29953FF30021332D /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 		147ED510299547960021332D /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		14888E712A1A84A900359431 /* NetworkProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProviderProtocol.swift; sourceTree = "<group>"; };
 		14888E742A1A938100359431 /* BitcoinListTableViewCellSnapshotsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinListTableViewCellSnapshotsTests.swift; sourceTree = "<group>"; };
@@ -293,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				147ED4FA2994AE9E0021332D /* BitcoinListViewModel.swift */,
-				147ED50B29953FF30021332D /* AlertViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -650,7 +646,6 @@
 				1423EE7529970F8900D4B59E /* Exchanges.swift in Sources */,
 				1423EE7629970F8900D4B59E /* Extension+Bundle.swift in Sources */,
 				1423EE7729970F8900D4B59E /* Extension+UIView.swift in Sources */,
-				1423EE7829970F8900D4B59E /* AlertViewModel.swift in Sources */,
 				142EE11E2A15CF66009191D8 /* BaseViewController.swift in Sources */,
 				1423EE7929970F8900D4B59E /* MainViewController.swift in Sources */,
 				1423EE7A29970F8900D4B59E /* AppDelegate.swift in Sources */,
@@ -677,7 +672,6 @@
 				147ED4F1299495DB0021332D /* Exchanges.swift in Sources */,
 				1423EE5529970AF800D4B59E /* Extension+Bundle.swift in Sources */,
 				147ED4FE2994B19F0021332D /* Extension+UIView.swift in Sources */,
-				147ED50C29953FF30021332D /* AlertViewModel.swift in Sources */,
 				14460B6B2A15A7BA00C4DA54 /* BaseViewController.swift in Sources */,
 				147ED4BF299494280021332D /* MainViewController.swift in Sources */,
 				147ED4BB299494280021332D /* AppDelegate.swift in Sources */,
