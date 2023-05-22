@@ -102,7 +102,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
 
         guard let coin = viewModel.list?[indexPath.row] else { return }
-        viewModel.routeTo(self, with: coin)
+        viewModel.route(from: self, with: coin)
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
