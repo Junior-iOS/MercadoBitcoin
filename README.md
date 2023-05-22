@@ -37,10 +37,11 @@
 - [Nimble-Snapshots](https://github.com/ashfurrow/Nimble-Snapshots) - Nimble matchers for FBSnapshotTestCase
 
 ## Functionalities
-- [x] Listagem repositórios.
-- [x] Detalhes e listagem das requests.
-- [x] Testes unitários para ViewModel.
-- [x] Testes de UI
+- [x] List of coins.
+- [x] Detail of each coin.
+- [x] ViewModel Unit Tests.
+- [x] UI Tests
+- [x] Snapshot Tests
 
 ## Setup
 
