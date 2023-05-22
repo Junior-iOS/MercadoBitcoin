@@ -9,7 +9,7 @@
 
 # Mercado Bitcoin
 
-    Mercado Bitcoin is a simple app that get the most out of cryptocurrency markets, so you can make informative decisions on buying or selling of them.
+    Mercado Bitcoin is a simple app that get the most out of cryptocurrency markets, so you can make informative decisions on buying or selling them.
     
 <p align="left">
     <img src="https://media.giphy.com/media/0A9oKqQhwYszfgOKaZ/giphy.gif" width="300" max-width="40%" alt="Mercado Bitcoin"/>
