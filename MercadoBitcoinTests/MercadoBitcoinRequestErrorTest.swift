@@ -2,7 +2,7 @@
 //  MercadoBitcoinRequestErrorTest.swift
 //  MercadoBitcoinTests
 //
-//  Created by Junior Silva on 18/05/23.
+//  Created by NJ Development on 18/05/23.
 //
 
 import XCTest
@@ -10,7 +10,6 @@ import XCTest
 @testable import MercadoBitcoinMock
 
 class MercadoBitcoinRequestErrorTest: XCTestCase {
-
     func testLocalizedDescription() {
         XCTAssertEqual(NetworkError.apiError.localizedDescription, "Failed to fetch data")
         XCTAssertEqual(NetworkError.invalidEndpoint.localizedDescription, "invalid Endpoint")
@@ -18,5 +17,4 @@ class MercadoBitcoinRequestErrorTest: XCTestCase {
         XCTAssertEqual(NetworkError.noData.localizedDescription, "No Data")
         XCTAssertEqual(NetworkError.serializationError.localizedDescription, "Failed to Decode data")
     }
-
 }

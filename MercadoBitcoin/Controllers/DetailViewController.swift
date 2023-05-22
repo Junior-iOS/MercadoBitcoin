@@ -11,7 +11,7 @@ final class DetailViewController: BaseViewController {
     // MARK: - Properties
     var coin: Bitcoin?
     lazy var detailsView = DetailsView(coin: coin)
-    
+
     // MARK: - Life cycle
     override func loadView() {
         super.loadView()

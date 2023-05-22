@@ -8,7 +8,6 @@
 import Foundation
 
 final class NetworkProvider: NetworkProviderProtocol {
-    
     private let json = """
     [
         {
@@ -602,10 +601,8 @@ final class NetworkProvider: NetworkProviderProtocol {
     ]
     """.data(using: .utf8)!
 
-    
     func execute<T: Codable>(_ endpoint: MercadoBitcoinEndpoint, expecting type: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
         let decodedResponse = try! JSONDecoder().decode(T.self, from: json)
         completion(.success(decodedResponse))
     }
-
 }

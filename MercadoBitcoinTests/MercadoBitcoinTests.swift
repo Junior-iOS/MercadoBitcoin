@@ -37,9 +37,7 @@ final class MercadoBitcoinTests: XCTestCase {
 }
 
 class MockNetworkProvider: NetworkProviderProtocol {
-    
-    func execute<T>(_ endpoint: MercadoBitcoinMock.MercadoBitcoinEndpoint, expecting type: T.Type, completion: @escaping (Result<T, MercadoBitcoinMock.NetworkError>) -> Void) where T : Decodable, T : Encodable { }
-    
+    func execute<T>(_ endpoint: MercadoBitcoinMock.MercadoBitcoinEndpoint, expecting type: T.Type, completion: @escaping (Result<T, MercadoBitcoinMock.NetworkError>) -> Void) where T: Decodable, T: Encodable { }
+
     var mockResult: ((Result<[MercadoBitcoinMock.Bitcoin], MercadoBitcoinMock.NetworkError>) -> Void)!
-    
 }

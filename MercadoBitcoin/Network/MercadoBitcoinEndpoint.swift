@@ -18,11 +18,11 @@ struct MercadoBitcoinEndpoint {
         urlComponents.path = path
         return urlComponents.url
     }
-    
+
     var headerValue: String {
         Bundle.main.apiKey
     }
-    
+
     var headerField: String {
         Bundle.main.headerField
     }

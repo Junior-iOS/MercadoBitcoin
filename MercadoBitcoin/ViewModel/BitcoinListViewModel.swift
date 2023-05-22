@@ -41,7 +41,7 @@ final class BitcoinListViewModel: NSObject {
             }
         }
     }
-    
+
     func routeTo(_ viewController: UIViewController, with coin: Bitcoin) {
         let vc = DetailViewController()
         vc.coin = coin

@@ -45,7 +45,7 @@ final class DetailsView: UIView {
 
     var coin: Bitcoin?
     let screenSize = UIScreen.main.bounds
-    
+
     private let kLabelMargin: CGFloat = 20
     private let kImageTrailingMargin: CGFloat = 10
     private let kImageBottomMargin: CGFloat = 80
