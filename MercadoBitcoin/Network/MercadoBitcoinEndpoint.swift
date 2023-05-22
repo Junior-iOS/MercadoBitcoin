@@ -24,7 +24,7 @@ struct MercadoBitcoinEndpoint {
     }
     
     var headerField: String {
-        "X-CoinAPI-Key"
+        Bundle.main.headerField
     }
 
     static func searchList() -> Self {

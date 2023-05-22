@@ -24,6 +24,10 @@ extension Bundle {
         object(forInfoDictionaryKey: "ENDPOINT") as? String ?? ""
     }
     
+    var headerField: String {
+        object(forInfoDictionaryKey: "HEADER_FIELD") as? String ?? ""
+    }
+    
     var title: String {
         object(forInfoDictionaryKey: "TITLE") as? String ?? ""
     }

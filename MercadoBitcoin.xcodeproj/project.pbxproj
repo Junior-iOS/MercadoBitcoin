@@ -761,6 +761,7 @@
 				DEVELOPMENT_TEAM = KTUAP2Z2QF;
 				ENDPOINT = /v1/exchanges;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_FIELD = "X-CoinAPI-Key";
 				HOST = rest.coinapi.io;
 				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -795,6 +796,7 @@
 				DEVELOPMENT_TEAM = KTUAP2Z2QF;
 				ENDPOINT = /v1/exchanges;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_FIELD = "X-CoinAPI-Key";
 				HOST = rest.coinapi.io;
 				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -945,6 +947,7 @@
 				DEVELOPMENT_TEAM = KTUAP2Z2QF;
 				ENDPOINT = /v1/exchanges;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_FIELD = "X-CoinAPI-Key";
 				HOST = rest.coinapi.io;
 				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -979,6 +982,7 @@
 				DEVELOPMENT_TEAM = KTUAP2Z2QF;
 				ENDPOINT = /v1/exchanges;
 				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_FIELD = "X-CoinAPI-Key";
 				HOST = rest.coinapi.io;
 				INFOPLIST_FILE = MercadoBitcoin/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
