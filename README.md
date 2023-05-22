@@ -12,7 +12,7 @@
     Mercado Bitcoin is a simple app that get the most out of cryptocurrency markets, so you can make informative decisions on buying or selling of them.
     
 <p align="left">
-    <img src="https://media.giphy.com/media/yjivddWdI5o4fh4sx1/giphy.gif" width="300" max-width="40%" alt="Context Menu" />
+    <img src="https://media.giphy.com/media/0A9oKqQhwYszfgOKaZ/giphy.gif" width="300" max-width="40%" alt="Mercado Bitcoin"/>
 </p>
 
 ## Contents
@@ -21,6 +21,7 @@
 - [About](#about)
 - [Functionalities](#functionalities)
 - [Setup](#setup)
+- [Tests](#tests)
 - [Credits](#credits)
 
 ## Requirements
@@ -31,10 +32,9 @@
 
 ### About:
 
-O projeto foi desenvolvido com a arquitetura **Clean Swift**, câmada nativa de networking e as seguintes bibliotecas externas:</br>
-- **PromiseKit**: Biblioteca para deixar mais transparente o uso de funções assíncronas.
-- **SDWebImage**: Biblioteca para cache de imagens online.
-- **Quick/Nimble**: Biblioteca para melhorar a verbosidade das assertivas do teste.
+- [Quick](https://github.com/Quick/Quick) - The Swift (and Objective-C) testing framework.
+- [Nimble](https://github.com/Quick/Nimble) - A Matcher Framework for Swift and Objective-C
+- [Nimble-Snapshots](https://github.com/ashfurrow/Nimble-Snapshots) - Nimble matchers for FBSnapshotTestCase
 
 ## Functionalities
 - [x] Listagem repositórios.
@@ -44,11 +44,23 @@ O projeto foi desenvolvido com a arquitetura **Clean Swift**, câmada nativa de 
 
 ## Setup
 
-Para executar o projeto, execute os comandos abaixo no terminal:
+First of all download and install Xcode, Cocoapods and then clone the repository:
+
+```sh
+$ git@github.com:Junior-iOS/MercadoBitcoin.git
+```
+
+After cloning, do the following:
+
 ```sh
 $ cd <diretorio-base>/MercadoBitcoin/
 $ pod install
 ```
+## Tests
+
+    To simplify the unit test was created the mock mode. 
+    The mock mode is another target inside the application containing a mock network provider to avoid performing async requests in unit testing and make it easier to run UITests.
+    If you want to run all tests, certify that you run them on MercadoBitcoinMock scheme.
 
 ## Credits
 
