@@ -18,7 +18,7 @@
 ## Contents
 
 - [Requirements](#requirements)
-- [About](#about)
+- [Prerequisites](#prerequisites)
 - [Functionalities](#functionalities)
 - [Setup](#setup)
 - [Tests](#tests)
@@ -30,7 +30,7 @@
 - Xcode 14.0 or later
 - Swift 5.0 or later
 
-### About:
+## Prerequisites:
 
 - [Quick](https://github.com/Quick/Quick) - The Swift (and Objective-C) testing framework.
 - [Nimble](https://github.com/Quick/Nimble) - A Matcher Framework for Swift and Objective-C
@@ -59,9 +59,9 @@ $ pod install
 ```
 ## Tests
 
-    To simplify the unit test was created the mock mode. 
+:warning: ***To simplify the unit test was created the mock mode. 
     The mock mode is another target inside the application containing a mock network provider to avoid performing async requests in unit testing and make it easier to run UITests.
-    If you want to run all tests, certify that you run them on MercadoBitcoinMock scheme.
+    If you want to run all tests, certify that you run them on :arrow_right: MercadoBitcoinMock :arrow_left: scheme.***
 
 ## Credits
 
