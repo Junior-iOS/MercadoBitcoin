@@ -18,7 +18,7 @@
 ## Contents
 
 - [Requirements](#requirements)
-- [Prerequisites](#prerequisites)
+- [Frameworks](#frameworks)
 - [Functionalities](#functionalities)
 - [Setup](#setup)
 - [Tests](#tests)
@@ -30,7 +30,7 @@
 - Xcode 14.0 or later
 - Swift 5.0 or later
 
-## Prerequisites:
+## Frameworks:
 
 - [Quick](https://github.com/Quick/Quick) - The Swift (and Objective-C) testing framework.
 - [Nimble](https://github.com/Quick/Nimble) - A Matcher Framework for Swift and Objective-C
