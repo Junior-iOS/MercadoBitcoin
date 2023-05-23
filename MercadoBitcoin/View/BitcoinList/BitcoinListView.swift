@@ -18,7 +18,7 @@ final class BitcoinListView: UIView {
         tableView.separatorStyle = .none
         tableView.layer.cornerRadius = 5
         tableView.clipsToBounds = true
-        tableView.backgroundColor = UIColor(red: 0.22, green: 0.22, blue: 0.22, alpha: 1.00)
+        tableView.backgroundColor = .clear
         return tableView
     }()
 
