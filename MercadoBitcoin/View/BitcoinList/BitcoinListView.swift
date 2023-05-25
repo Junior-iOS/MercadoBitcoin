@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 final class BitcoinListView: UIView {
-    let viewModel = BitcoinListViewModel()
-
     let tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.translatesAutoresizingMaskIntoConstraints = false
